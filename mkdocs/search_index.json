@@ -21,6 +21,36 @@
             "title": "Project layout"
         }, 
         {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/", 
+            "text": "Person\n\n\n\n\nMethods:\n\n\n\n\nProperties:\n\n\nName\n\n\nGets or sets the name. \n\n\nstability=1\n\n\nage\n\n\nGets or sets the age. \n\n\nstability=1\n\n\nEvents:", 
+            "title": "Person"
+        }, 
+        {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/#person", 
+            "text": "", 
+            "title": "Person"
+        }, 
+        {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/#methods", 
+            "text": "", 
+            "title": "Methods:"
+        }, 
+        {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/#properties", 
+            "text": "Name  Gets or sets the name.   stability=1  age  Gets or sets the age.", 
+            "title": "Properties:"
+        }, 
+        {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/#stability1", 
+            "text": "", 
+            "title": "stability=1"
+        }, 
+        {
+            "location": "/Dynamo_DocumentationTestLibrary/Person/#events", 
+            "text": "", 
+            "title": "Events:"
+        }, 
+        {
             "location": "/Dynamo_DocumentationTestLibrary/TestDocumentation/", 
             "text": "TestDocumentation\n\n\n\n\nMethods:\n\n\nDynamo.DocumentationTestLibrary.TestDocumentation.TestingGenerics\nT\n(Int32 n)\n\n\nMks the array. \n\n\n\n\n\n\n\n\nName\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nn:\n\n\nThe index.\n\n\n\n\n\n\nReturns: New Array\n\n\n\n\n\n\n\n\n\n\n\n\nTesting remarks tag\n\n\n\n\nstability=2\n\n\nDynamo.DocumentationTestLibrary.TestDocumentation.TestHyperLink(\nPerson\n p)\n\n\nTests the hyper link. \n\n\n\n\n\n\n\n\nName\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\np:\n\n\nThe p.\n\n\n\n\n\n\nReturns:\n\n\n\n\n\n\n\n\n\n\nstability=1\n\n\nProperties:\n\n\nproperty1\n\n\nTesting property \n\n\nstability=1\n\n\nEvents:\n\n\nChanged\n\n\nTesting Events \n\n\nstability=1", 
             "title": "TestDocumentation"
