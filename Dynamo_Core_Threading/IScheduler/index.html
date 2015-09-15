@@ -266,15 +266,11 @@
             
                 <li class="toctree-l3"><a href="#ischeduler">IScheduler</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1587,8 +1583,8 @@
               
                 <h1 id="ischeduler">IScheduler</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamocorethreadingischedulerprocessnexttaskboolean-waitiftaskqueueisempty">Dynamo.Core.Threading.IScheduler.ProcessNextTask(Boolean waitIfTaskQueueIsEmpty)</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="processnexttaskboolean-waitiftaskqueueisemptystability1">ProcessNextTask(Boolean waitIfTaskQueueIsEmpty)<sup>stability=1</sup></h5>
 <p>An ISchedulerThread implementation calls this method so scheduler starts to process the next task in the queue, if there is any. Note that this method is meant to process only one task in queue. The implementation of ISchedulerThread is free to call this method again in a fashion that matches its task fetching behavior. </p>
 <table>
 <thead>
@@ -1608,8 +1604,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamocorethreadingischedulerscheduleforexecutionasynctask-asynctask">Dynamo.Core.Threading.IScheduler.ScheduleForExecution(<a href="http://localhost:8000/Dynamo_Core_Threading/AsyncTask">AsyncTask</a> asyncTask)</h5>
+<h5 id="scheduleforexecutionasynctask-asynctaskstability1">ScheduleForExecution(<a href="http://localhost:8000/Dynamo_Core_Threading/AsyncTask">AsyncTask</a> asyncTask)<sup>stability=1</sup></h5>
 <p>Callers of this method create an instance of AsyncTask derived class and call this method to schedule the task for execution. </p>
 <table>
 <thead>
@@ -1625,15 +1620,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="nexttimestamp">NextTimeStamp</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="nexttimestampstability1">NextTimeStamp<sup>stability=1</sup></h5>
 <p>AsyncTask base class calls this to obtain the new time-stamp value. </p>
-<p>stability=1</p>
-<h5 id="tasks">Tasks</h5>
+<h5 id="tasksstability1">Tasks<sup>stability=1</sup></h5>
 <p>The complete collection of all of the currently scheduled tasks </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

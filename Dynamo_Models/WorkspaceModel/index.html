@@ -987,17 +987,11 @@
             
                 <li class="toctree-l3"><a href="#workspacemodel">WorkspaceModel</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_2">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1589,8 +1583,8 @@
               
                 <h1 id="workspacemodel">WorkspaceModel</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamomodelsworkspacemodelremovenodenodemodel-model">Dynamo.Models.WorkspaceModel.RemoveNode(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> model)</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="removenodenodemodel-modelstability1">RemoveNode(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> model)<sup>stability=1</sup></h5>
 <p>Removes a node from this workspace. This method does not raise a NodesModified event. (LC notes this is clearly not true) </p>
 <table>
 <thead>
@@ -1606,17 +1600,14 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsworkspacemodelsave">Dynamo.Models.WorkspaceModel.Save()</h5>
+<h5 id="savestability1">Save<sup>stability=1</sup></h5>
+<p>()</p>
 <p>Save assuming that the Filepath attribute is set. </p>
-<p>stability=1</p>
 <h5 id="dynamomodelsworkspacemodeldispose">Dynamo.Models.WorkspaceModel.Dispose()</h5>
 <p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. </p>
-<p>stability=1</p>
 <h5 id="dynamomodelsworkspacemodelclear">Dynamo.Models.WorkspaceModel.Clear()</h5>
 <p>Clears this workspace of nodes, notes, and connectors. </p>
-<p>stability=1</p>
-<h5 id="dynamomodelsworkspacemodelsaveasstring-newpathruntimecore-coreboolean-isbackup">Dynamo.Models.WorkspaceModel.SaveAs(String newPath,RuntimeCore core,Boolean isBackup)</h5>
+<h5 id="saveasstring-newpathruntimecore-coreboolean-isbackupstability1">SaveAs(String newPath,RuntimeCore core,Boolean isBackup)<sup>stability=1</sup></h5>
 <p>Save to a specific file path, if the path is null or empty, does nothing. If successful, the CurrentWorkspace.FilePath field is updated as a side effect </p>
 <table>
 <thead>
@@ -1656,117 +1647,84 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsworkspacemodeladdandregisternode">Dynamo.Models.WorkspaceModel.AddAndRegisterNode()</h5>
+<h5 id="addandregisternodestability1">AddAndRegisterNode<sup>stability=1</sup></h5>
+<p>()</p>
 <p>Adds a node to this workspace. </p>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="presets">Presets</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="presetsstability1">Presets<sup>stability=1</sup></h5>
 <p>A set of input parameter states, this can be used to set the graph to a serialized state. </p>
-<p>stability=1</p>
-<h5 id="lastsaved">LastSaved</h5>
+<h5 id="lastsavedstability1">LastSaved<sup>stability=1</sup></h5>
 <p>The date of the last save. </p>
-<p>stability=1</p>
-<h5 id="author">Author</h5>
+<h5 id="authorstability1">Author<sup>stability=1</sup></h5>
 <p>An author of the workspace </p>
-<p>stability=1</p>
-<h5 id="description">Description</h5>
+<h5 id="descriptionstability1">Description<sup>stability=1</sup></h5>
 <p>A description of the workspace </p>
-<p>stability=1</p>
-<h5 id="hasunsavedchanges">HasUnsavedChanges</h5>
+<h5 id="hasunsavedchangesstability1">HasUnsavedChanges<sup>stability=1</sup></h5>
 <p>Are there unsaved changes in the workspace? </p>
-<p>stability=1</p>
-<h5 id="nodes">Nodes</h5>
+<h5 id="nodesstability1">Nodes<sup>stability=1</sup></h5>
 <p>All of the nodes currently in the workspace. </p>
-<p>stability=1</p>
-<h5 id="connectors">Connectors</h5>
+<h5 id="connectorsstability1">Connectors<sup>stability=1</sup></h5>
 <p>All of the connectors currently in the workspace. </p>
-<p>stability=1</p>
-<h5 id="notes">Notes</h5>
+<h5 id="notesstability1">Notes<sup>stability=1</sup></h5>
 <p>All of the notes currently in the workspace. </p>
-<p>stability=1</p>
-<h5 id="filename">FileName</h5>
+<h5 id="filenamestability1">FileName<sup>stability=1</sup></h5>
 <p>Path to the file this workspace is associated with. If null or empty, this workspace has never been saved. </p>
-<p>stability=1</p>
-<h5 id="name">Name</h5>
+<h5 id="namestability1">Name<sup>stability=1</sup></h5>
 <p>The name of this workspace. </p>
-<p>stability=1</p>
-<h5 id="x">X</h5>
+<h5 id="xstability1">X<sup>stability=1</sup></h5>
 <p>Get or set the X position of the workspace. </p>
-<p>stability=1</p>
-<h5 id="y">Y</h5>
+<h5 id="ystability1">Y<sup>stability=1</sup></h5>
 <p>Get or set the Y position of the workspace </p>
-<p>stability=1</p>
-<h5 id="height">Height</h5>
+<h5 id="heightstability1">Height<sup>stability=1</sup></h5>
 <p>Get the height of the workspace's bounds. </p>
-<p>stability=1</p>
-<h5 id="width">Width</h5>
+<h5 id="widthstability1">Width<sup>stability=1</sup></h5>
 <p>Get the width of the workspace's bounds. </p>
-<p>stability=1</p>
-<h5 id="rect">Rect</h5>
+<h5 id="rectstability1">Rect<sup>stability=1</sup></h5>
 <p>Get the bounds of the workspace. </p>
-<p>stability=1</p>
-<h5 id="canundo">CanUndo</h5>
+<h5 id="canundostability1">CanUndo<sup>stability=1</sup></h5>
 <p>Determine if undo operation is currently possible. </p>
-<p>stability=1</p>
-<h5 id="canredo">CanRedo</h5>
+<h5 id="canredostability1">CanRedo<sup>stability=1</sup></h5>
 <p>Determine if redo operation is currently possible. </p>
-<p>stability=1</p>
-<h5 id="guid">Guid</h5>
+<h5 id="guidstability1">Guid<sup>stability=1</sup></h5>
 <p>A unique identifier for the workspace. </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
-<h5 id="requestnodecentered">RequestNodeCentered</h5>
+<hr />
+<h2 id="events">Events</h2>
+<h5 id="requestnodecenteredstability1">RequestNodeCentered<sup>stability=1</sup></h5>
 <p>Event that is fired when a workspace requests that a Node or Note model is centered. </p>
-<p>stability=1</p>
-<h5 id="zoomchanged">ZoomChanged</h5>
+<h5 id="zoomchangedstability1">ZoomChanged<sup>stability=1</sup></h5>
 <p>Event that is fired every time the zoom factor of a workspace changes. </p>
-<p>stability=1</p>
-<h5 id="currentoffsetchanged">CurrentOffsetChanged</h5>
+<h5 id="currentoffsetchangedstability1">CurrentOffsetChanged<sup>stability=1</sup></h5>
 <p>Event that is fired every time the position offset of a workspace changes. </p>
-<p>stability=1</p>
-<h5 id="workspacesaved">WorkspaceSaved</h5>
+<h5 id="workspacesavedstability1">WorkspaceSaved<sup>stability=1</sup></h5>
 <p>Event that is fired when the workspace is saved. </p>
-<p>stability=1</p>
-<h5 id="nodeadded">NodeAdded</h5>
+<h5 id="nodeaddedstability1">NodeAdded<sup>stability=1</sup></h5>
 <p>Event that is fired when a node is added to the workspace. </p>
-<p>stability=1</p>
-<h5 id="noderemoved">NodeRemoved</h5>
+<h5 id="noderemovedstability1">NodeRemoved<sup>stability=1</sup></h5>
 <p>Event that is fired when a node is removed from the workspace. </p>
-<p>stability=1</p>
-<h5 id="nodescleared">NodesCleared</h5>
+<h5 id="nodesclearedstability1">NodesCleared<sup>stability=1</sup></h5>
 <p>Event that is fired when nodes are cleared from the workspace. </p>
-<p>stability=1</p>
-<h5 id="noteadded">NoteAdded</h5>
+<h5 id="noteaddedstability1">NoteAdded<sup>stability=1</sup></h5>
 <p>Event that is fired when a note is added to the workspace. </p>
-<p>stability=1</p>
-<h5 id="noteremoved">NoteRemoved</h5>
+<h5 id="noteremovedstability1">NoteRemoved<sup>stability=1</sup></h5>
 <p>Event that is fired when a note is removed from the workspace. </p>
-<p>stability=1</p>
-<h5 id="notescleared">NotesCleared</h5>
+<h5 id="notesclearedstability1">NotesCleared<sup>stability=1</sup></h5>
 <p>Event that is fired when notes are cleared from the workspace. </p>
-<p>stability=1</p>
-<h5 id="annotationadded">AnnotationAdded</h5>
+<h5 id="annotationaddedstability1">AnnotationAdded<sup>stability=1</sup></h5>
 <p>Event that is fired when an annotation is added to the workspace. </p>
-<p>stability=1</p>
-<h5 id="annotationremoved">AnnotationRemoved</h5>
+<h5 id="annotationremovedstability1">AnnotationRemoved<sup>stability=1</sup></h5>
 <p>Event that is fired when an annotation is removed from the workspace. </p>
-<p>stability=1</p>
-<h5 id="annotationscleared">AnnotationsCleared</h5>
+<h5 id="annotationsclearedstability1">AnnotationsCleared<sup>stability=1</sup></h5>
 <p>Event that is fired when annotations are cleared from the workspace. </p>
-<p>stability=1</p>
-<h5 id="connectoradded">ConnectorAdded</h5>
+<h5 id="connectoraddedstability1">ConnectorAdded<sup>stability=1</sup></h5>
 <p>Event that is fired when a connector is added to the workspace. </p>
-<p>stability=1</p>
-<h5 id="connectordeleted">ConnectorDeleted</h5>
+<h5 id="connectordeletedstability1">ConnectorDeleted<sup>stability=1</sup></h5>
 <p>Event that is fired when a connector is deleted from a workspace. </p>
-<p>stability=1</p>
-<h5 id="disposed">Disposed</h5>
+<h5 id="disposedstability1">Disposed<sup>stability=1</sup></h5>
 <p>Event that is fired when this workspace is disposed of. </p>
-<p>stability=1</p>
-<h5 id="saving">Saving</h5>
+<h5 id="savingstability1">Saving<sup>stability=1</sup></h5>
 <p>Event that is fired during the saving of the workspace. Add additional XmlNode objects to the XmlDocument provided, in order to save data to the file. </p>
-<h2 id="stability1_2">stability=1</h2>
+<hr />
               
             </div>
           </div>

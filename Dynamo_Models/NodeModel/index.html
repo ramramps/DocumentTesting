@@ -840,17 +840,11 @@
             
                 <li class="toctree-l3"><a href="#nodemodel">NodeModel</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_2">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1589,17 +1583,14 @@
               
                 <h1 id="nodemodel">NodeModel</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
+<h2 id="methods">Methods</h2>
 <h5 id="dynamomodelsnodemodelregisterinputports">Dynamo.Models.NodeModel.RegisterInputPorts()</h5>
 <p>Reads inputs list and adds ports for each input. </p>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelregisteroutputports">Dynamo.Models.NodeModel.RegisterOutputPorts()</h5>
 <p>Reads outputs list and adds ports for each output </p>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelregisterallports">Dynamo.Models.NodeModel.RegisterAllPorts()</h5>
 <p>Updates UI so that all ports reflect current state of InPortData and OutPortData. </p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodeladdportporttype-porttypeportdata-dataint32-index">Dynamo.Models.NodeModel.AddPort(<a href="http://localhost:8000/Dynamo_Models/PortType">PortType</a> portType,<a href="http://localhost:8000/Dynamo_Models/PortData">PortData</a> data,Int32 index)</h5>
+<h5 id="addportporttype-porttypeportdata-dataint32-indexstability1">AddPort(<a href="http://localhost:8000/Dynamo_Models/PortType">PortType</a> portType,<a href="http://localhost:8000/Dynamo_Models/PortData">PortData</a> data,Int32 index)<sup>stability=1</sup></h5>
 <p>Add a port to this node. If the port already exists, return that port. </p>
 <table>
 <thead>
@@ -1643,12 +1634,10 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelprintexpression">Dynamo.Models.NodeModel.PrintExpression()</h5>
 <p>Creates a Scheme representation of this dynNode and all connected dynNodes. </p>
 <p>Returns: S-Expression</p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelrequestvisualupdateasyncischeduler-schedulerenginecontroller-engineirenderpackagefactory-factory">Dynamo.Models.NodeModel.RequestVisualUpdateAsync(<a href="http://localhost:8000/Dynamo_Core_Threading/IScheduler">IScheduler</a> scheduler,<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> engine,<a href="http://localhost:8000/Dynamo_Interfaces/IRenderPackageFactory">IRenderPackageFactory</a> factory)</h5>
+<h5 id="requestvisualupdateasyncischeduler-schedulerenginecontroller-engineirenderpackagefactory-factorystability1">RequestVisualUpdateAsync(<a href="http://localhost:8000/Dynamo_Core_Threading/IScheduler">IScheduler</a> scheduler,<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> engine,<a href="http://localhost:8000/Dynamo_Interfaces/IRenderPackageFactory">IRenderPackageFactory</a> factory)<sup>stability=1</sup></h5>
 <p>Call this method to asynchronously regenerate render package for this node. This method accesses core properties of a NodeModel and therefore is typically called on the main/UI thread. </p>
 <table>
 <thead>
@@ -1688,8 +1677,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodeldispatchonuithreadaction-a">Dynamo.Models.NodeModel.DispatchOnUIThread(Action a)</h5>
+<h5 id="dispatchonuithreadaction-astability1">DispatchOnUIThread(Action a)<sup>stability=1</sup></h5>
 <p>Called by nodes for behavior that they want to dispatch on the UI thread Triggers event to be received by the UI. If no UI exists, behavior will not be executed. </p>
 <table>
 <thead>
@@ -1705,12 +1693,10 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelgetdescriptionstringfromattributes">Dynamo.Models.NodeModel.GetDescriptionStringFromAttributes()</h5>
 <p>Get the description from type information </p>
 <p>Returns: The value or "No description provided"</p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelgetastidentifierforoutputindexint32-outputindex">Dynamo.Models.NodeModel.GetAstIdentifierForOutputIndex(Int32 outputIndex)</h5>
+<h5 id="getastidentifierforoutputindexint32-outputindexstability1">GetAstIdentifierForOutputIndex(Int32 outputIndex)<sup>stability=1</sup></h5>
 <p>Fetches the ProtoAST Identifier for a given output port. </p>
 <table>
 <thead>
@@ -1730,12 +1716,11 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelgettypehintforoutput">Dynamo.Models.NodeModel.GetTypeHintForOutput()</h5>
+<h5 id="gettypehintforoutputstability1">GetTypeHintForOutput<sup>stability=1</sup></h5>
+<p>()</p>
 <p>The possible type of output at specified port. This type information is not necessary to be accurate. </p>
 <p>Returns: </p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelgetvalueint32-outportindexenginecontroller-engine">Dynamo.Models.NodeModel.GetValue(Int32 outPortIndex,<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> engine)</h5>
+<h5 id="getvalueint32-outportindexenginecontroller-enginestability1">GetValue(Int32 outPortIndex,<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> engine)<sup>stability=1</sup></h5>
 <p>Gets the most recent value of this node stored in an EngineController that has evaluated it. </p>
 <table>
 <thead>
@@ -1767,11 +1752,9 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelsetnicknamefromattribute">Dynamo.Models.NodeModel.SetNickNameFromAttribute()</h5>
 <p>Sets the nickname of this node from the attributes on the class definining it. </p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelhasinputint32-data">Dynamo.Models.NodeModel.HasInput(Int32 data)</h5>
+<h5 id="hasinputint32-datastability1">HasInput(Int32 data)<sup>stability=1</sup></h5>
 <p>Checks if there is an input for a certain port. </p>
 <table>
 <thead>
@@ -1791,8 +1774,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelhasconnectedinputint32-data">Dynamo.Models.NodeModel.HasConnectedInput(Int32 data)</h5>
+<h5 id="hasconnectedinputint32-datastability1">HasConnectedInput(Int32 data)<sup>stability=1</sup></h5>
 <p>Checks if there is a connected input for a certain port. This does not count default values as an input. </p>
 <table>
 <thead>
@@ -1812,8 +1794,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelhasoutputint32-portdata">Dynamo.Models.NodeModel.HasOutput(Int32 portData)</h5>
+<h5 id="hasoutputint32-portdatastability1">HasOutput(Int32 portData)<sup>stability=1</sup></h5>
 <p>Checks if there is an output for a certain port. </p>
 <table>
 <thead>
@@ -1833,11 +1814,9 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelsnodemodelclearruntimeerror">Dynamo.Models.NodeModel.ClearRuntimeError()</h5>
 <p>Clears the errors/warnings that are generated when running the graph. If the node has a value supplied for the persistentWarning, then the node's State will be set to ElementState.Persistent and the ToolTipText will be set to the persistent warning. Otherwise, the State will be set to ElementState.Dead </p>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelwarningstring-pboolean-ispersistent">Dynamo.Models.NodeModel.Warning(String p,Boolean isPersistent)</h5>
+<h5 id="warningstring-pboolean-ispersistentstability1">Warning(String p,Boolean isPersistent)<sup>stability=1</sup></h5>
 <p>Set a warning on a node. </p>
 <table>
 <thead>
@@ -1865,8 +1844,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomodelsnodemodelnotifyastbuildbrokenstring-p">Dynamo.Models.NodeModel.NotifyAstBuildBroken(String p)</h5>
+<h5 id="notifyastbuildbrokenstring-pstability1">NotifyAstBuildBroken(String p)<sup>stability=1</sup></h5>
 <p>Change the state of node to ElementState.AstBuildBroken and display "p" in tooltip window. </p>
 <table>
 <thead>
@@ -1882,102 +1860,73 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="creationname">CreationName</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="creationnamestability1">CreationName<sup>stability=1</sup></h5>
 <p>The unique name that was created the node by </p>
-<p>stability=1</p>
-<h5 id="inportdata">InPortData</h5>
+<h5 id="inportdatastability1">InPortData<sup>stability=1</sup></h5>
 <p>Definitions for the Input Ports of this NodeModel. </p>
-<p>stability=1</p>
-<h5 id="outportdata">OutPortData</h5>
+<h5 id="outportdatastability1">OutPortData<sup>stability=1</sup></h5>
 <p>Definitions for the Output Ports of this NodeModel. </p>
-<p>stability=1</p>
-<h5 id="allconnectors">AllConnectors</h5>
+<h5 id="allconnectorsstability1">AllConnectors<sup>stability=1</sup></h5>
 <p>All of the connectors entering and exiting the NodeModel. </p>
-<p>stability=1</p>
-<h5 id="iscustomfunction">IsCustomFunction</h5>
+<h5 id="iscustomfunctionstability1">IsCustomFunction<sup>stability=1</sup></h5>
 <p>Returns whether this node represents a built-in or custom function. </p>
-<p>stability=1</p>
-<h5 id="isvisible">IsVisible</h5>
+<h5 id="isvisiblestability1">IsVisible<sup>stability=1</sup></h5>
 <p>Returns whether the node is to be included in visualizations. </p>
-<p>stability=1</p>
-<h5 id="isupstreamvisible">IsUpstreamVisible</h5>
+<h5 id="isupstreamvisiblestability1">IsUpstreamVisible<sup>stability=1</sup></h5>
 <p>Returns whether the node aggregates its upstream connections for visualizations. </p>
-<p>stability=1</p>
-<h5 id="isinputnode">IsInputNode</h5>
+<h5 id="isinputnodestability1">IsInputNode<sup>stability=1</sup></h5>
 <p>Input nodes are used in Customizer and Presets. Input nodes can be numbers, number sliders, strings, bool, code blocks and custom nodes, which don't specify path. </p>
-<p>stability=1</p>
-<h5 id="isselectedinput">IsSelectedInput</h5>
+<h5 id="isselectedinputstability1">IsSelectedInput<sup>stability=1</sup></h5>
 <p>Specifies whether an input node should be included in a preset. By default, this field is set to true. </p>
-<p>stability=1</p>
-<h5 id="state">State</h5>
+<h5 id="statestability1">State<sup>stability=1</sup></h5>
 <p>The Node's state, which determines the coloring of the Node in the canvas. </p>
-<p>stability=1</p>
-<h5 id="isinerrorstate">IsInErrorState</h5>
+<h5 id="isinerrorstatestability1">IsInErrorState<sup>stability=1</sup></h5>
 <p>If the state of node is Error or AstBuildBroken </p>
-<p>stability=1</p>
-<h5 id="tooltiptext">ToolTipText</h5>
+<h5 id="tooltiptextstability1">ToolTipText<sup>stability=1</sup></h5>
 <p>Text that is displayed as this Node's tooltip. </p>
-<p>stability=1</p>
-<h5 id="overridenamewithnickname">OverrideNameWithNickName</h5>
+<h5 id="overridenamewithnicknamestability1">OverrideNameWithNickName<sup>stability=1</sup></h5>
 <p>Should we override the displayed name with this Node's NickName property? </p>
-<p>stability=1</p>
-<h5 id="nickname">NickName</h5>
+<h5 id="nicknamestability1">NickName<sup>stability=1</sup></h5>
 <p>The name that is displayed in the UI for this NodeModel. </p>
-<p>stability=1</p>
-<h5 id="inports">InPorts</h5>
+<h5 id="inportsstability1">InPorts<sup>stability=1</sup></h5>
 <p>Collection of PortModels representing all Input ports. </p>
-<p>stability=1</p>
-<h5 id="outports">OutPorts</h5>
+<h5 id="outportsstability1">OutPorts<sup>stability=1</sup></h5>
 <p>Collection of PortModels representing all Output ports. </p>
-<p>stability=1</p>
-<h5 id="argumentlacing">ArgumentLacing</h5>
+<h5 id="argumentlacingstability1">ArgumentLacing<sup>stability=1</sup></h5>
 <p>Control how arguments lists of various sizes are laced. </p>
-<p>stability=1</p>
-<h5 id="name">Name</h5>
+<h5 id="namestability1">Name<sup>stability=1</sup></h5>
 <p>Name property </p>
-<p>stability=1</p>
-<h5 id="category">Category</h5>
+<h5 id="categorystability1">Category<sup>stability=1</sup></h5>
 <p>Category property </p>
-<p>stability=1</p>
-<h5 id="isupdated">IsUpdated</h5>
+<h5 id="isupdatedstability1">IsUpdated<sup>stability=1</sup></h5>
 <p>If the node is updated in LiveRunner's execution </p>
-<p>stability=1</p>
-<h5 id="tags">Tags</h5>
+<h5 id="tagsstability1">Tags<sup>stability=1</sup></h5>
 <p>Search tags for this Node. </p>
-<p>stability=1</p>
-<h5 id="description">Description</h5>
+<h5 id="descriptionstability1">Description<sup>stability=1</sup></h5>
 <p>Description of this Node. </p>
-<p>stability=1</p>
-<h5 id="astidentifierforpreview">AstIdentifierForPreview</h5>
+<h5 id="astidentifierforpreviewstability1">AstIdentifierForPreview<sup>stability=1</sup></h5>
 <p>ProtoAST Identifier for result of the node before any output unpacking has taken place. If there is only one output for the node, this is equivalent to GetAstIdentifierForOutputIndex(0). </p>
-<p>stability=1</p>
-<h5 id="isconvertible">IsConvertible</h5>
+<h5 id="isconvertiblestability1">IsConvertible<sup>stability=1</sup></h5>
 <p>If this node is allowed to be converted to AST node in nodes to code conversion. </p>
-<p>stability=1</p>
-<h5 id="astidentifierbase">AstIdentifierBase</h5>
+<h5 id="astidentifierbasestability1">AstIdentifierBase<sup>stability=1</sup></h5>
 <p>Return a variable whose value will be displayed in preview window. Derived nodes may overwrite this function to display default value of this node. E.g., code block node may want to display the value of the left hand side variable of last statement. </p>
-<p>stability=1</p>
-<h5 id="displaylabels">DisplayLabels</h5>
+<h5 id="displaylabelsstability1">DisplayLabels<sup>stability=1</sup></h5>
 <p>Enable or disable label display. Default is false. </p>
-<p>stability=1</p>
-<h5 id="ispartiallyapplied">IsPartiallyApplied</h5>
+<h5 id="ispartiallyappliedstability1">IsPartiallyApplied<sup>stability=1</sup></h5>
 <p>Is this node being applied partially, resulting in a partial function? </p>
-<p>stability=1</p>
-<h5 id="raisesmodificationevents">RaisesModificationEvents</h5>
+<h5 id="raisesmodificationeventsstability1">RaisesModificationEvents<sup>stability=1</sup></h5>
 <p>Indicate if the node should respond to NodeModified event. It always should be true, unless is temporarily set to false to avoid flood of Modified event. </p>
-<p>stability=1</p>
-<h5 id="istopmostnode">IsTopMostNode</h5>
+<h5 id="istopmostnodestability1">IsTopMostNode<sup>stability=1</sup></h5>
 <p>If node is connected to some other node(other than Output) then it is not a 'top' node </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
-<h5 id="modified">Modified</h5>
+<hr />
+<h2 id="events">Events</h2>
+<h5 id="modifiedstability1">Modified<sup>stability=1</sup></h5>
 <p>Event fired when the node's DesignScript AST should be recompiled </p>
-<p>stability=1</p>
-<h5 id="connectoradded">ConnectorAdded</h5>
+<h5 id="connectoraddedstability1">ConnectorAdded<sup>stability=1</sup></h5>
 <p>Event fired when a new ConnectorModel has been attached to one of this node's inputs. </p>
-<h2 id="stability1_2">stability=1</h2>
+<hr />
               
             </div>
           </div>

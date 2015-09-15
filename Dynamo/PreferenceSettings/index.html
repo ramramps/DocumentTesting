@@ -131,17 +131,13 @@
                 <li class="toctree-l3"><a href="#preferencesettings">PreferenceSettings</a></li>
                 
             
-                <li class="toctree-l3"><a href="#preferencesettings_1">PreferenceSettings</a></li>
+                <li class="toctree-l3"><a href="#preferencesettingsstability1">PreferenceSettingsstability=1</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1589,11 +1585,11 @@
             <div class="section">
               
                 <h1 id="preferencesettings">PreferenceSettings</h1>
-<h1 id="preferencesettings_1">PreferenceSettings</h1>
+<h1 id="preferencesettingsstability1">PreferenceSettings<sup>stability=1</sup></h1>
 <p>PreferenceSettings is a class for GUI to persist certain settings. Upon running of the GUI, those settings that are persistent will be loaded from a XML file from DYNAMO_SETTINGS_FILE. When GUI is closed, the settings into the XML file. </p>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamopreferencesettingssavestring-filepath">Dynamo.PreferenceSettings.Save(String filePath)</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="savestring-filepathstability1">Save(String filePath)<sup>stability=1</sup></h5>
 <p>Save PreferenceSettings in XML File Path if possible, else return false </p>
 <table>
 <thead>
@@ -1613,8 +1609,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamopreferencesettingssaveinternalstring-preferencefilepath">Dynamo.PreferenceSettings.SaveInternal(String preferenceFilePath)</h5>
+<h5 id="saveinternalstring-preferencefilepathstability1">SaveInternal(String preferenceFilePath)<sup>stability=1</sup></h5>
 <p>Save PreferenceSettings in a default directory when no path is specified. </p>
 <table>
 <thead>
@@ -1634,8 +1629,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamopreferencesettingsloadstring-filepath">Dynamo.PreferenceSettings.Load(String filePath)</h5>
+<h5 id="loadstring-filepathstability1">Load(String filePath)<sup>stability=1</sup></h5>
 <p>Return PreferenceSettings from XML path if possible, else return PreferenceSettings with default values </p>
 <table>
 <thead>
@@ -1655,69 +1649,50 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="librarywidth">LibraryWidth</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="librarywidthstability1">LibraryWidth<sup>stability=1</sup></h5>
 <p>The width of the library pane. </p>
-<p>stability=1</p>
-<h5 id="consoleheight">ConsoleHeight</h5>
+<h5 id="consoleheightstability1">ConsoleHeight<sup>stability=1</sup></h5>
 <p>The height of the console display. </p>
-<p>stability=1</p>
-<h5 id="showconnector">ShowConnector</h5>
+<h5 id="showconnectorstability1">ShowConnector<sup>stability=1</sup></h5>
 <p>Should connectors be visible? </p>
-<p>stability=1</p>
-<h5 id="connectortype">ConnectorType</h5>
+<h5 id="connectortypestability1">ConnectorType<sup>stability=1</sup></h5>
 <p>The types of connector: Bezier or Polyline. </p>
-<p>stability=1</p>
-<h5 id="isbackgroundpreviewactive">IsBackgroundPreviewActive</h5>
+<h5 id="isbackgroundpreviewactivestability1">IsBackgroundPreviewActive<sup>stability=1</sup></h5>
 <p>Should the background 3D preview be shown? </p>
-<p>stability=1</p>
-<h5 id="numberformat">NumberFormat</h5>
+<h5 id="numberformatstability1">NumberFormat<sup>stability=1</sup></h5>
 <p>The decimal precision used to display numbers. </p>
-<p>stability=1</p>
-<h5 id="maxnumrecentfiles">MaxNumRecentFiles</h5>
+<h5 id="maxnumrecentfilesstability1">MaxNumRecentFiles<sup>stability=1</sup></h5>
 <p>The maximum number of recent file paths to be saved. </p>
-<p>stability=1</p>
-<h5 id="recentfiles">RecentFiles</h5>
+<h5 id="recentfilesstability1">RecentFiles<sup>stability=1</sup></h5>
 <p>A list of recently opened file paths. </p>
-<p>stability=1</p>
-<h5 id="backupfiles">BackupFiles</h5>
+<h5 id="backupfilesstability1">BackupFiles<sup>stability=1</sup></h5>
 <p>A list of backup file paths. </p>
-<p>stability=1</p>
-<h5 id="custompackagefolders">CustomPackageFolders</h5>
+<h5 id="custompackagefoldersstability1">CustomPackageFolders<sup>stability=1</sup></h5>
 <p>A list of folders containing zero-touch nodes and custom nodes. </p>
-<p>stability=1</p>
-<h5 id="packagedirectoriestouninstall">PackageDirectoriesToUninstall</h5>
+<h5 id="packagedirectoriestouninstallstability1">PackageDirectoriesToUninstall<sup>stability=1</sup></h5>
 <p>A list of packages used by the Package Manager to determine which packages are marked for deletion. </p>
-<p>stability=1</p>
-<h5 id="windowx">WindowX</h5>
+<h5 id="windowxstability1">WindowX<sup>stability=1</sup></h5>
 <p>The last X coordinate of the Dynamo window. </p>
-<p>stability=1</p>
-<h5 id="windowy">WindowY</h5>
+<h5 id="windowystability1">WindowY<sup>stability=1</sup></h5>
 <p>The last Y coordinate of the Dynamo window. </p>
-<p>stability=1</p>
-<h5 id="windoww">WindowW</h5>
+<h5 id="windowwstability1">WindowW<sup>stability=1</sup></h5>
 <p>The last width of the Dynamo window. </p>
-<p>stability=1</p>
-<h5 id="windowh">WindowH</h5>
+<h5 id="windowhstability1">WindowH<sup>stability=1</sup></h5>
 <p>The last height of the Dynamo window. </p>
-<p>stability=1</p>
-<h5 id="usehardwareacceleration">UseHardwareAcceleration</h5>
+<h5 id="usehardwareaccelerationstability1">UseHardwareAcceleration<sup>stability=1</sup></h5>
 <p>Should Dynamo use hardware acceleration if it is supported? </p>
-<p>stability=1</p>
-<h5 id="backupinterval">BackupInterval</h5>
+<h5 id="backupintervalstability1">BackupInterval<sup>stability=1</sup></h5>
 <p>This defines how long (in milliseconds) will the graph be automatically saved. </p>
-<p>stability=1</p>
-<h5 id="backupfilescount">BackupFilesCount</h5>
+<h5 id="backupfilescountstability1">BackupFilesCount<sup>stability=1</sup></h5>
 <p>This defines how many files will be backed up. </p>
-<p>stability=1</p>
-<h5 id="packagedownloadtouaccepted">PackageDownloadTouAccepted</h5>
+<h5 id="packagedownloadtouacceptedstability1">PackageDownloadTouAccepted<sup>stability=1</sup></h5>
 <p>Indicates if the user has accepted the terms of use for downloading packages from package manager. </p>
-<p>stability=1</p>
-<h5 id="showedges">ShowEdges</h5>
+<h5 id="showedgesstability1">ShowEdges<sup>stability=1</sup></h5>
 <p>Indicates whether surface and solid edges will be rendered. </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

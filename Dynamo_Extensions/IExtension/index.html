@@ -458,17 +458,13 @@
                 <li class="toctree-l3"><a href="#iextension">IExtension</a></li>
                 
             
-                <li class="toctree-l3"><a href="#iextension_1">IExtension</a></li>
+                <li class="toctree-l3"><a href="#iextensionstability1">IExtensionstability=1</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1589,27 +1585,26 @@
             <div class="section">
               
                 <h1 id="iextension">IExtension</h1>
-<h1 id="iextension_1">IExtension</h1>
+<h1 id="iextensionstability1">IExtension<sup>stability=1</sup></h1>
 <p>An extension to the model layer of Dynamo </p>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamoextensionsiextensionstartup">Dynamo.Extensions.IExtension.Startup()</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="startupstability1">Startup<sup>stability=1</sup></h5>
+<p>()</p>
 <p>Action to be invoked when Dynamo begins to start up. This action is <em>not</em> guaranteed to be invoked unless the extension is already installed at startup. Exceptions thrown from this method will be caught by Dynamo and logged. </p>
-<p>stability=1</p>
-<h5 id="dynamoextensionsiextensionready">Dynamo.Extensions.IExtension.Ready()</h5>
+<h5 id="readystability1">Ready<sup>stability=1</sup></h5>
+<p>()</p>
 <p>Action to be invoked when the Dynamo has started up and is ready for user interaction. This action is guaranteed to be called even if the extension is installed after startup. Exceptions thrown from this method will be caught by Dynamo and logged. </p>
-<p>stability=1</p>
 <h5 id="dynamoextensionsiextensionshutdown">Dynamo.Extensions.IExtension.Shutdown()</h5>
 <p>Action to be invoked when shutdown has begun. </p>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="uniqueid">UniqueId</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="uniqueidstability1">UniqueId<sup>stability=1</sup></h5>
 <p>A unique id for this extension instance. There may be multiple instances of the same type, but the application will <em>not</em> allow two instances to coexist with the same id. </p>
-<p>stability=1</p>
-<h5 id="name">Name</h5>
+<h5 id="namestability1">Name<sup>stability=1</sup></h5>
 <p>A name for the Extension. This is used for more user-readable logging. </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

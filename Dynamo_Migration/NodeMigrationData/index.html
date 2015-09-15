@@ -672,15 +672,13 @@
                 <li class="toctree-l3"><a href="#nodemigrationdata">NodeMigrationData</a></li>
                 
             
-                <li class="toctree-l3"><a href="#nodemigrationdata_1">NodeMigrationData</a></li>
+                <li class="toctree-l3"><a href="#nodemigrationdatastability1">NodeMigrationDatastability=1</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1587,11 +1585,11 @@
             <div class="section">
               
                 <h1 id="nodemigrationdata">NodeMigrationData</h1>
-<h1 id="nodemigrationdata_1">NodeMigrationData</h1>
+<h1 id="nodemigrationdatastability1">NodeMigrationData<sup>stability=1</sup></h1>
 <p>This class contains the resulting nodes as a result of node migration. Note that this class may contain other information (e.g. connectors) in the future in the event a migration process results in other elements. </p>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamomigrationnodemigrationdatafindconnectorportid-startportportid-endport">Dynamo.Migration.NodeMigrationData.FindConnector(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> startPort,<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> endPort)</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="findconnectorportid-startportportid-endportstability1">FindConnector(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> startPort,<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> endPort)<sup>stability=1</sup></h5>
 <p>Call this method to find the connector in the associate XmlDocument, given its start and end port information. </p>
 <table>
 <thead>
@@ -1623,8 +1621,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomigrationnodemigrationdatafindfirstconnectorportid-portid">Dynamo.Migration.NodeMigrationData.FindFirstConnector(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> portId)</h5>
+<h5 id="findfirstconnectorportid-portidstability1">FindFirstConnector(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> portId)<sup>stability=1</sup></h5>
 <p>Call this method to retrieve the first connector given a port. This method is a near equivalent of FindConnectors, but only return the first connector found. This way the caller codes can be simplified in a way that it does not have the validate the returned list for item count before accessing its element. </p>
 <table>
 <thead>
@@ -1644,8 +1641,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomigrationnodemigrationdatafindconnectorsportid-portid">Dynamo.Migration.NodeMigrationData.FindConnectors(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> portId)</h5>
+<h5 id="findconnectorsportid-portidstability1">FindConnectors(<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> portId)<sup>stability=1</sup></h5>
 <p>Given a port, get all connectors that connect to it. </p>
 <table>
 <thead>
@@ -1665,8 +1661,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamomigrationnodemigrationdatareconnecttoportxmlelement-connectorportid-port">Dynamo.Migration.NodeMigrationData.ReconnectToPort(XmlElement connector,<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> port)</h5>
+<h5 id="reconnecttoportxmlelement-connectorportid-portstability1">ReconnectToPort(XmlElement connector,<a href="http://localhost:8000/Dynamo_Migration/PortId">PortId</a> port)<sup>stability=1</sup></h5>
 <p>Reconnect a given connector to another port identified by "port". </p>
 <table>
 <thead>
@@ -1694,10 +1689,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
 <hr />
-<h2 id="events">Events:</h2>
+<h2 id="properties">Properties</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

@@ -324,17 +324,13 @@
                 <li class="toctree-l3"><a href="#enginecontroller">EngineController</a></li>
                 
             
-                <li class="toctree-l3"><a href="#enginecontroller_1">EngineController</a></li>
+                <li class="toctree-l3"><a href="#enginecontrollerstability1">EngineControllerstability=1</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1589,14 +1585,13 @@
             <div class="section">
               
                 <h1 id="enginecontroller">EngineController</h1>
-<h1 id="enginecontroller_1">EngineController</h1>
+<h1 id="enginecontrollerstability1">EngineController<sup>stability=1</sup></h1>
 <p>A controller to coordinate the interactions between some DesignScript sub components like library managment, live runner and so on. </p>
 <hr />
-<h2 id="methods">Methods:</h2>
+<h2 id="methods">Methods</h2>
 <h5 id="dynamoengineenginecontrollergetfunctiongroups">Dynamo.Engine.EngineController.GetFunctionGroups()</h5>
 <p>Return all function groups. </p>
-<p>stability=1</p>
-<h5 id="dynamoengineenginecontrollerimportlibrarystring-library">Dynamo.Engine.EngineController.ImportLibrary(String library)</h5>
+<h5 id="importlibrarystring-librarystability1">ImportLibrary(String library)<sup>stability=1</sup></h5>
 <p>Import library. </p>
 <table>
 <thead>
@@ -1612,8 +1607,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamoengineenginecontrollergetmirrorstring-variablename">Dynamo.Engine.EngineController.GetMirror(String variableName)</h5>
+<h5 id="getmirrorstring-variablenamestability1">GetMirror(String variableName)<sup>stability=1</sup></h5>
 <p>Get runtime mirror for variable. </p>
 <table>
 <thead>
@@ -1633,8 +1627,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamoengineenginecontrollergetgraphicitemsstring-variablename">Dynamo.Engine.EngineController.GetGraphicItems(String variableName)</h5>
+<h5 id="getgraphicitemsstring-variablenamestability1">GetGraphicItems(String variableName)<sup>stability=1</sup></h5>
 <p>Get a list of IGraphicItem of variable if it is a geometry object; otherwise returns null. </p>
 <table>
 <thead>
@@ -1654,8 +1647,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamoengineenginecontrollerupdategraphimmediategraphsyncdata-graphsyncdata">Dynamo.Engine.EngineController.UpdateGraphImmediate(GraphSyncData graphSyncData)</h5>
+<h5 id="updategraphimmediategraphsyncdata-graphsyncdatastability1">UpdateGraphImmediate(GraphSyncData graphSyncData)<sup>stability=1</sup></h5>
 <p>This method is called by UpdateGraphAsyncTask in the context of ISchedulerThread to kick start an update through LiveRunner. </p>
 <table>
 <thead>
@@ -1671,8 +1663,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamoengineenginecontrollernodedeletednodemodel-node">Dynamo.Engine.EngineController.NodeDeleted(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> node)</h5>
+<h5 id="nodedeletednodemodel-nodestability1">NodeDeleted(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> node)<sup>stability=1</sup></h5>
 <p>NodeDeleted event handler. </p>
 <table>
 <thead>
@@ -1688,25 +1679,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="liverunnercore">LiveRunnerCore</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="liverunnercorestability1">LiveRunnerCore<sup>stability=1</sup></h5>
 <p>Get DesignScript core. </p>
-<p>stability=1</p>
-<h5 id="liverunnerruntimecore">LiveRunnerRuntimeCore</h5>
+<h5 id="liverunnerruntimecorestability1">LiveRunnerRuntimeCore<sup>stability=1</sup></h5>
 <p>Get DesignScript runtime core. </p>
-<p>stability=1</p>
-<h5 id="libraryservices">LibraryServices</h5>
+<h5 id="libraryservicesstability1">LibraryServices<sup>stability=1</sup></h5>
 <p>Return libary service instance. </p>
-<p>stability=1</p>
-<h5 id="isdisposed">IsDisposed</h5>
+<h5 id="isdisposedstability1">IsDisposed<sup>stability=1</sup></h5>
 <p>A property defining whether the EngineController has been disposed or not. This is a conservative field, as there should only be one owner of a valid EngineController or not. </p>
-<p>stability=1</p>
-<h5 id="haspendinggraphsyncdata">HasPendingGraphSyncData</h5>
+<h5 id="haspendinggraphsyncdatastability1">HasPendingGraphSyncData<sup>stability=1</sup></h5>
 <p>Return true if there are graph sync data in the queue waiting for being executed. </p>
 <p>Returns: </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

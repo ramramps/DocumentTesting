@@ -770,15 +770,11 @@
             
                 <li class="toctree-l3"><a href="#homeworkspacemodel">HomeWorkspaceModel</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#stability1_1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1587,17 +1583,14 @@
               
                 <h1 id="homeworkspacemodel">HomeWorkspaceModel</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
+<h2 id="methods">Methods</h2>
 <h5 id="dynamomodelshomeworkspacemodelclear">Dynamo.Models.HomeWorkspaceModel.Clear()</h5>
 <p>Clears this workspace of nodes, notes, and connectors. </p>
-<p>stability=1</p>
 <h5 id="dynamomodelshomeworkspacemodelstartperiodicevaluation">Dynamo.Models.HomeWorkspaceModel.StartPeriodicEvaluation()</h5>
 <p>Start periodic evaluation using the currently set RunPeriod </p>
-<p>stability=1</p>
 <h5 id="dynamomodelshomeworkspacemodelstopperiodicevaluation">Dynamo.Models.HomeWorkspaceModel.StopPeriodicEvaluation()</h5>
 <p>Stop the on-going periodic evaluation, if there is any. </p>
-<p>stability=1</p>
-<h5 id="dynamomodelshomeworkspacemodelresetengineenginecontroller-controllerboolean-marknodesasdirty">Dynamo.Models.HomeWorkspaceModel.ResetEngine(<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> controller,Boolean markNodesAsDirty)</h5>
+<h5 id="resetengineenginecontroller-controllerboolean-marknodesasdirtystability1">ResetEngine(<a href="http://localhost:8000/Dynamo_Engine/EngineController">EngineController</a> controller,Boolean markNodesAsDirty)<sup>stability=1</sup></h5>
 <p>Call this method to reset the virtual machine, avoiding a race condition by using a thread join inside the vm executive. TODO(Luke): Push this into a resync call with the engine controller </p>
 <table>
 <thead>
@@ -1625,11 +1618,9 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelshomeworkspacemodelrun">Dynamo.Models.HomeWorkspaceModel.Run()</h5>
 <p>This method is typically called from the main application thread (as a result of user actions such as button click or node UI changes) to schedule an update of the graph. This call may or may not represent an actual update. In the event that the user action does not result in actual graph update (e.g. moving of node on UI), the update task will not be scheduled for execution. </p>
-<p>stability=1</p>
-<h5 id="dynamomodelshomeworkspacemodelgetexecutingnodesboolean-showrunpreview">Dynamo.Models.HomeWorkspaceModel.GetExecutingNodes(Boolean showRunPreview)</h5>
+<h5 id="getexecutingnodesboolean-showrunpreviewstability1">GetExecutingNodes(Boolean showRunPreview)<sup>stability=1</sup></h5>
 <p>This function gets the set of nodes that will get executed in the next run. This function will be called when the nodes are modified or when showrunpreview is set the executing nodes will be sent via SetNodeDeltaState event. </p>
 <table>
 <thead>
@@ -1645,22 +1636,19 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
 <h5 id="dynamomodelshomeworkspacemodelgetorphanedserializablesandclearhistoricaltracedata">Dynamo.Models.HomeWorkspaceModel.GetOrphanedSerializablesAndClearHistoricalTraceData()</h5>
 <p>Returns a list of ISerializable items which exist in the preloaded trace data but do not exist in the current CallSite data. </p>
 <p>Returns: </p>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
-<h5 id="istestmode">IsTestMode</h5>
+<hr />
+<h2 id="properties">Properties</h2>
+<h5 id="istestmodestability1">IsTestMode<sup>stability=1</sup></h5>
 <p>Flag specifying if this workspace is operating in "test mode". </p>
-<p>stability=1</p>
-<h5 id="hasrunwithoutcrash">HasRunWithoutCrash</h5>
+<h5 id="hasrunwithoutcrashstability1">HasRunWithoutCrash<sup>stability=1</sup></h5>
 <p>Indicates whether a run has completed successfully. This flag is critical to ensuring that crashing run-auto files are not left in run-auto upon reopening. </p>
-<p>stability=1</p>
-<h5 id="evaluationcount">EvaluationCount</h5>
+<h5 id="evaluationcountstability1">EvaluationCount<sup>stability=1</sup></h5>
 <p>Evaluation count is incremented whenever the graph is evaluated. It is set to zero when the graph is Cleared. </p>
-<h2 id="stability1_1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

@@ -563,13 +563,11 @@
             
                 <li class="toctree-l3"><a href="#ipathresolver">IPathResolver</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1585,25 +1583,21 @@
               
                 <h1 id="ipathresolver">IPathResolver</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
+<h2 id="methods">Methods</h2>
 <hr />
-<h2 id="properties">Properties:</h2>
-<h5 id="additionalresolutionpaths">AdditionalResolutionPaths</h5>
+<h2 id="properties">Properties</h2>
+<h5 id="additionalresolutionpathsstability1">AdditionalResolutionPaths<sup>stability=1</sup></h5>
 <p>Additional directories that should be considered when path resolution is done for a library that does not contain full path information. The return value of this property should never be null. Each entry must represent a valid directory, otherwise DirectoryNotFoundException exception is thrown. </p>
-<p>stability=1</p>
-<h5 id="additionalnodedirectories">AdditionalNodeDirectories</h5>
+<h5 id="additionalnodedirectoriesstability1">AdditionalNodeDirectories<sup>stability=1</sup></h5>
 <p>Additional directories in which node assemblies can be located. The return value of this property should never be null. Each entry must represent a valid directory, otherwise DirectoryNotFoundException exception is thrown. </p>
-<p>stability=1</p>
-<h5 id="preloadedlibrarypaths">PreloadedLibraryPaths</h5>
+<h5 id="preloadedlibrarypathsstability1">PreloadedLibraryPaths<sup>stability=1</sup></h5>
 <p>Libraries to be preloaded as part of Dynamo start up sequence. Each entry in this list can either represent full path to a library, or just the assembly name. If absolute path information is not supplied, the library will be looked up through both predefined and additional resolution paths. The return value of this property should never be null. </p>
-<p>stability=1</p>
-<h5 id="userdatarootfolder">UserDataRootFolder</h5>
+<h5 id="userdatarootfolderstability1">UserDataRootFolder<sup>stability=1</sup></h5>
 <p>This property represents the root folder where user specific data files are stored. If this property returns a null or empty string, then PathManager falls back to using "%ProgramData%\Dynamo". If this property returns a string that does not represent an existing folder, PathManager will attempt to create a new directory. If the property does not represent a valid path string, an exception will be thrown by the underlying system IO API invoked. Note that this path should not include the version number as it will be appended by PathManager. </p>
-<p>stability=1</p>
-<h5 id="commondatarootfolder">CommonDataRootFolder</h5>
+<h5 id="commondatarootfolderstability1">CommonDataRootFolder<sup>stability=1</sup></h5>
 <p>This property represents the root folder where application common data files (i.e. shared among all users on the same machine) are stored. If this property returns a null or empty string, then PathManager falls back to using "%AppData%\Dynamo". If this property returns a string that does not represent an existing folder, PathManager will attempt to create a new directory. If the property does not represent a valid path string, an exception will be thrown by the underlying system IO API invoked. Note that this path should not include the version number as it will be appended by PathManager. </p>
-<h2 id="stability1">stability=1</h2>
-<h2 id="events">Events:</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>

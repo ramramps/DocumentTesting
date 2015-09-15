@@ -1023,13 +1023,11 @@
             
                 <li class="toctree-l3"><a href="#codeblockutils">CodeBlockUtils</a></li>
                 
-                    <li><a class="toctree-l4" href="#methods">Methods:</a></li>
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
-                    <li><a class="toctree-l4" href="#stability1">stability=1</a></li>
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
                 
-                    <li><a class="toctree-l4" href="#properties">Properties:</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events:</a></li>
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
                 
             
             </ul>
@@ -1585,8 +1583,8 @@
               
                 <h1 id="codeblockutils">CodeBlockUtils</h1>
 <hr />
-<h2 id="methods">Methods:</h2>
-<h5 id="dynamonodescodeblockutilsnormalizelinebreaksstring-text">Dynamo.Nodes.CodeBlockUtils.NormalizeLineBreaks(String text)</h5>
+<h2 id="methods">Methods</h2>
+<h5 id="normalizelinebreaksstring-textstability1">NormalizeLineBreaks(String text)<sup>stability=1</sup></h5>
 <p>Call this method to turn all "\r\n" and "\r" occurrences in the given string into "\n". </p>
 <table>
 <thead>
@@ -1606,8 +1604,7 @@
 </tr>
 </tbody>
 </table>
-<p>stability=1</p>
-<h5 id="dynamonodescodeblockutilsformatusertextstring-inputcode">Dynamo.Nodes.CodeBlockUtils.FormatUserText(String inputCode)</h5>
+<h5 id="formatusertextstring-inputcodestability1">FormatUserText(String inputCode)<sup>stability=1</sup></h5>
 <p>Call this method to format user codes in the following ways: 1. Leading and trailing whitespaces are removed from the original string. Characters that qualify as "whitespaces" are: '\n', '\t' and ' '. 2. Multiple statements on a single line will be broken down further into multiple statements. For example, "a = 1; b = 2;" will be broken down into two lines: "a = 1;\nb = 2;" (line break denoted by the new \n character). 3. Leading whitespaces will be removed ony for the first line. This is to preserve the indentation for lines other than the first. 4. If the resulting codes do not end with a closing curly bracket '}', then a semi-colon is appended to the code. This ensures codes like "a" will result in codes becoming "a;" </p>
 <table>
 <thead>
@@ -1627,10 +1624,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="stability1">stability=1</h2>
-<h2 id="properties">Properties:</h2>
 <hr />
-<h2 id="events">Events:</h2>
+<h2 id="properties">Properties</h2>
+<hr />
+<h2 id="events">Events</h2>
 <hr />
               
             </div>
