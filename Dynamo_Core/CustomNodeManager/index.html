@@ -594,7 +594,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource%601/">IRenderPackageSource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource/">IRenderPackageSource</a>
         
     </li>
 
@@ -608,7 +608,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/ISource%601/">ISource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/ISource/">ISource</a>
         
     </li>
 
@@ -801,14 +801,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeFactory%601/">INodeFactory`1</a>
+        <a class="" href="../../Dynamo_Models/INodeFactory/">INodeFactory</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeLoader%601/">INodeLoader`1</a>
+        <a class="" href="../../Dynamo_Models/INodeLoader/">INodeLoader</a>
         
     </li>
 
@@ -1040,7 +1040,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/CustomNodeController%601/">CustomNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/CustomNodeController/">CustomNodeController</a>
         
     </li>
 
@@ -1096,7 +1096,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallNodeController%601/">FunctionCallNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallNodeController/">FunctionCallNodeController</a>
         
     </li>
 
@@ -1250,14 +1250,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/ZeroTouchNodeController%601/">ZeroTouchNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchNodeController/">ZeroTouchNodeController</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/ZeroTouchVarArgNodeController%601/">ZeroTouchVarArgNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchVarArgNodeController/">ZeroTouchVarArgNodeController</a>
         
     </li>
 
@@ -1322,7 +1322,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchDictionary%601/">SearchDictionary`1</a>
+        <a class="" href="../../Dynamo_Search/SearchDictionary/">SearchDictionary</a>
         
     </li>
 
@@ -1351,7 +1351,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory%601/">ISearchCategory`1</a>
+        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory/">ISearchCategory</a>
         
     </li>
 
@@ -1589,7 +1589,7 @@
 <p>Manages instantiation of custom nodes. All custom nodes known to Dynamo should be stored with this type. This object implements late initialization of custom nodes by providing a single interface to initialize custom nodes. </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="getworkspacebyidguid-customnodeidstability1">GetWorkspaceById(Guid customNodeId)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagergetworkspacebyidsystemguid">Dynamo.Core.CustomNodeManager.GetWorkspaceById(System.Guid)</h5>
 <p>Gets custom node workspace by a specified custom node ID </p>
 <table>
 <thead>
@@ -1609,7 +1609,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="createcustomnodeinstanceguid-idstring-nicknameboolean-istestmodestability1">CreateCustomNodeInstance(Guid id,String nickname,Boolean isTestMode)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagercreatecustomnodeinstancesystemguidsystemstringsystemboolean">Dynamo.Core.CustomNodeManager.CreateCustomNodeInstance(System.Guid,System.String,System.Boolean)</h5>
 <p>Creates a new Custom Node Instance. </p>
 <table>
 <thead>
@@ -1649,7 +1649,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="guidfrompathstring-pathstability1">GuidFromPath(String path)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagerguidfrompathsystemstring">Dynamo.Core.CustomNodeManager.GuidFromPath(System.String)</h5>
 <p>Get a function id from a guid assuming that the file is already loaded. </p>
 <table>
 <thead>
@@ -1669,7 +1669,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="removeguid-guidstability1">Remove(Guid guid)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagerremovesystemguid">Dynamo.Core.CustomNodeManager.Remove(System.Guid)</h5>
 <p>Attempts to remove all traces of a particular custom node from Dynamo, assuming the node is not in a loaded workspace. </p>
 <table>
 <thead>
@@ -1685,7 +1685,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="uninitializeguid-guidstability1">Uninitialize(Guid guid)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanageruninitializesystemguid">Dynamo.Core.CustomNodeManager.Uninitialize(System.Guid)</h5>
 <p>Uninitialized a custom node. The information for the node is still retained, but the next time the node is queried for it's workspace / definition / an instace it will be re-initialized from disk. </p>
 <table>
 <thead>
@@ -1701,7 +1701,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="adduninitializedcustomnodesinpathstring-pathboolean-istestmodeboolean-ispackagememberstability1">AddUninitializedCustomNodesInPath(String path,Boolean isTestMode,Boolean isPackageMember)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanageradduninitializedcustomnodesinpathsystemstringsystembooleansystemboolean">Dynamo.Core.CustomNodeManager.AddUninitializedCustomNodesInPath(System.String,System.Boolean,System.Boolean)</h5>
 <p>Scans the given path for custom node files, retaining their information in the manager for later potential initialization. </p>
 <table>
 <thead>
@@ -1745,7 +1745,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="containsguid-guidstability1">Contains(Guid guid)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagercontainssystemguid">Dynamo.Core.CustomNodeManager.Contains(System.Guid)</h5>
 <p>Tells whether the custom node's unique identifier is inside of the manager (initialized or not) </p>
 <table>
 <thead>
@@ -1761,7 +1761,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="containsstring-namestability1">Contains(String name)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagercontainssystemstring">Dynamo.Core.CustomNodeManager.Contains(System.String)</h5>
 <p>Tells whether the custom node's name is inside of the manager (initialized or not) </p>
 <table>
 <thead>
@@ -1777,7 +1777,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="isinitializedstring-namestability1">IsInitialized(String name)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagerisinitializedsystemstring">Dynamo.Core.CustomNodeManager.IsInitialized(System.String)</h5>
 <p>Tells whether the custom node is initialized in the manager </p>
 <table>
 <thead>
@@ -1797,7 +1797,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="isinitializedguid-guidstability1">IsInitialized(Guid guid)<sup>stability=1</sup></h5>
+<h5 id="dynamocorecustomnodemanagerisinitializedsystemguid">Dynamo.Core.CustomNodeManager.IsInitialized(System.Guid)</h5>
 <p>Tells whether the custom node is initialized in the manager </p>
 <table>
 <thead>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FunctionCallNodeController`1 - Dynamo</title>
+  <title>ZeroTouchVarArgNodeController - Dynamo</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "FunctionCallNodeController`1";
+    var mkdocs_page_name = "ZeroTouchVarArgNodeController";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -578,7 +578,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource%601/">IRenderPackageSource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource/">IRenderPackageSource</a>
         
     </li>
 
@@ -592,7 +592,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/ISource%601/">ISource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/ISource/">ISource</a>
         
     </li>
 
@@ -785,14 +785,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeFactory%601/">INodeFactory`1</a>
+        <a class="" href="../../Dynamo_Models/INodeFactory/">INodeFactory</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeLoader%601/">INodeLoader`1</a>
+        <a class="" href="../../Dynamo_Models/INodeLoader/">INodeLoader</a>
         
     </li>
 
@@ -1024,7 +1024,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../CustomNodeController%601/">CustomNodeController`1</a>
+        <a class="" href="../CustomNodeController/">CustomNodeController</a>
         
     </li>
 
@@ -1079,24 +1079,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">FunctionCallNodeController`1</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#functioncallnodecontroller1">FunctionCallNodeController`1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#functioncallnodecontroller1stability1">FunctionCallNodeController`1stability=1</a></li>
-                
-                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
-                
-                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
-                
-                    <li><a class="toctree-l4" href="#events">Events</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../FunctionCallNodeController/">FunctionCallNodeController</a>
         
     </li>
 
@@ -1250,14 +1234,27 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../ZeroTouchNodeController%601/">ZeroTouchNodeController`1</a>
+        <a class="" href="../ZeroTouchNodeController/">ZeroTouchNodeController</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../ZeroTouchVarArgNodeController%601/">ZeroTouchVarArgNodeController`1</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">ZeroTouchVarArgNodeController</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#zerotouchvarargnodecontroller">ZeroTouchVarArgNodeController</a></li>
+                
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
+                
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
+                
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -1322,7 +1319,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchDictionary%601/">SearchDictionary`1</a>
+        <a class="" href="../../Dynamo_Search/SearchDictionary/">SearchDictionary</a>
         
     </li>
 
@@ -1351,7 +1348,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory%601/">ISearchCategory`1</a>
+        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory/">ISearchCategory</a>
         
     </li>
 
@@ -1574,7 +1571,7 @@
         
       
     
-    <li>FunctionCallNodeController`1</li>
+    <li>ZeroTouchVarArgNodeController</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -1584,41 +1581,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="functioncallnodecontroller1">FunctionCallNodeController`1</h1>
-<h1 id="functioncallnodecontroller1stability1">FunctionCallNodeController`1<sup>stability=1</sup></h1>
-<p>Controller for nodes that act as function calls. </p>
+                <h1 id="zerotouchvarargnodecontroller">ZeroTouchVarArgNodeController</h1>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="deserializecorestability1">DeserializeCore<sup>stability=1</sup></h5>
-<p>()</p>
-<p>Deserializes Controller information from XML. </p>
-<h5 id="serializecorestability1">SerializeCore<sup>stability=1</sup></h5>
-<p>()</p>
-<p>Serializes Controller information from XML. </p>
-<h5 id="syncnodewithdefinitionnodemodel-modelstability1">SyncNodeWithDefinition(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> model)<sup>stability=1</sup></h5>
-<p>Synchronizes a node with this controller, based on the underlying function. </p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>model:</td>
-<td>Node to sync.</td>
-</tr>
-</tbody>
-</table>
 <hr />
 <h2 id="properties">Properties</h2>
-<h5 id="definitionstability1">Definition<sup>stability=1</sup></h5>
-<p>A FunctionDescriptor describing the function that this controller will call. </p>
-<h5 id="nicknamestability1">NickName<sup>stability=1</sup></h5>
-<p>NickName for nodes using this controller, based on the underlying FunctionDescriptor. </p>
-<h5 id="returnkeysstability1">ReturnKeys<sup>stability=1</sup></h5>
-<p>ReturnKeys for multi-output functions. </p>
 <hr />
 <h2 id="events">Events</h2>
 <hr />
@@ -1629,10 +1596,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../IsDesignScriptCompatibleAttribute/" class="btn btn-neutral float-right" title="IsDesignScriptCompatibleAttribute"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../Dynamo_Properties/Resources/" class="btn btn-neutral float-right" title="Resources"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../FunctionCallBase%602/" class="btn btn-neutral" title="FunctionCallBase`2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ZeroTouchNodeController/" class="btn btn-neutral" title="ZeroTouchNodeController"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1658,10 +1625,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../FunctionCallBase%602/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../ZeroTouchNodeController/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../IsDesignScriptCompatibleAttribute/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../Dynamo_Properties/Resources/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -594,7 +594,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource%601/">IRenderPackageSource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource/">IRenderPackageSource</a>
         
     </li>
 
@@ -608,7 +608,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Interfaces/ISource%601/">ISource`1</a>
+        <a class="" href="../../Dynamo_Interfaces/ISource/">ISource</a>
         
     </li>
 
@@ -801,14 +801,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeFactory%601/">INodeFactory`1</a>
+        <a class="" href="../../Dynamo_Models/INodeFactory/">INodeFactory</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Models/INodeLoader%601/">INodeLoader`1</a>
+        <a class="" href="../../Dynamo_Models/INodeLoader/">INodeLoader</a>
         
     </li>
 
@@ -1040,7 +1040,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/CustomNodeController%601/">CustomNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/CustomNodeController/">CustomNodeController</a>
         
     </li>
 
@@ -1096,7 +1096,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallNodeController%601/">FunctionCallNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallNodeController/">FunctionCallNodeController</a>
         
     </li>
 
@@ -1250,14 +1250,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/ZeroTouchNodeController%601/">ZeroTouchNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchNodeController/">ZeroTouchNodeController</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/ZeroTouchVarArgNodeController%601/">ZeroTouchVarArgNodeController`1</a>
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchVarArgNodeController/">ZeroTouchVarArgNodeController</a>
         
     </li>
 
@@ -1322,7 +1322,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchDictionary%601/">SearchDictionary`1</a>
+        <a class="" href="../../Dynamo_Search/SearchDictionary/">SearchDictionary</a>
         
     </li>
 
@@ -1351,7 +1351,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory%601/">ISearchCategory`1</a>
+        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory/">ISearchCategory</a>
         
     </li>
 
@@ -1589,7 +1589,7 @@
 <p>An instance of UndoRedoRecorder is owned by an "undo client" object. In the context of Dynamo, the undo client is "Workspace". The undo recorder calls into the owning undo client in an undo/redo operation, causing the client to delete, reload or create the corresponding model. To qualify as an undo client, a class must implement this interface. </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="deletemodelxmlelement-modeldatastability1">DeleteModel(XmlElement modelData)<sup>stability=1</sup></h5>
+<h5 id="dynamocoreiundoredorecorderclientdeletemodelsystemxmlxmlelement">Dynamo.Core.IUndoRedoRecorderClient.DeleteModel(System.Xml.XmlElement)</h5>
 <p>UndoRedoRecorder calls this method to delete a model in the client. </p>
 <table>
 <thead>
@@ -1605,7 +1605,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="reloadmodelxmlelement-modeldatastability1">ReloadModel(XmlElement modelData)<sup>stability=1</sup></h5>
+<h5 id="dynamocoreiundoredorecorderclientreloadmodelsystemxmlxmlelement">Dynamo.Core.IUndoRedoRecorderClient.ReloadModel(System.Xml.XmlElement)</h5>
 <p>UndoRedoRecorder calls this method to request the client to reload a given model by giving its data. </p>
 <table>
 <thead>
@@ -1621,7 +1621,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="createmodelxmlelement-modeldatastability1">CreateModel(XmlElement modelData)<sup>stability=1</sup></h5>
+<h5 id="dynamocoreiundoredorecorderclientcreatemodelsystemxmlxmlelement">Dynamo.Core.IUndoRedoRecorderClient.CreateModel(System.Xml.XmlElement)</h5>
 <p>UndoRedoRecorder calls this method to request a model to be created. </p>
 <table>
 <thead>
@@ -1637,7 +1637,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="getmodelforelementxmlelement-modeldatastability1">GetModelForElement(XmlElement modelData)<sup>stability=1</sup></h5>
+<h5 id="dynamocoreiundoredorecorderclientgetmodelforelementsystemxmlxmlelement">Dynamo.Core.IUndoRedoRecorderClient.GetModelForElement(System.Xml.XmlElement)</h5>
 <p>UndoRedoRecorder calls this method to retrieve the up-to-date instance of the model before any undo/redo operation modifies the model. The up-to-date information of the model is important so that an undo operation can be redone (repopulated with the up-to-date data before the undo operation happens). </p>
 <table>
 <thead>
