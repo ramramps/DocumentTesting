@@ -404,6 +404,21 @@
         
             
     <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
     <li><span>Dynamo.Extensions</span></li>
 
         
@@ -827,7 +842,7 @@
                 <li class="toctree-l3"><a href="#nodefactory">NodeFactory</a></li>
                 
             
-                <li class="toctree-l3"><a href="#nodefactorystability1">NodeFactorystability=1</a></li>
+                <li class="toctree-l3"><a href="#nodefactory-1">NodeFactory 1</a></li>
                 
                     <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
@@ -1089,7 +1104,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallBase%602/">FunctionCallBase`2</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
         
     </li>
 
@@ -1336,7 +1351,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchLibrary%602/">SearchLibrary`2</a>
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
         
     </li>
 
@@ -1577,6 +1592,8 @@
     <li>NodeFactory</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+      
     </li>
   </ul>
   <hr/>
@@ -1585,13 +1602,13 @@
             <div class="section">
               
                 <h1 id="nodefactory">NodeFactory</h1>
-<h1 id="nodefactorystability1">NodeFactory<sup>stability=1</sup></h1>
+<h1 id="nodefactory-1">NodeFactory <sup>1</sup></h1>
 <p>Manages factories and loaders for NodeModels. Can use registered factories and loaders to instantiate and load new NodeModels. </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="dynamomodelsnodefactoryaddtypefactoryandloadert">Dynamo.Models.NodeFactory.AddTypeFactoryAndLoader&lt;<em>T</em>&gt;()</h5>
+<h5 id="dynamomodelsnodefactoryaddtypefactoryandloadert">Dynamo.Models.NodeFactory.AddTypeFactoryAndLoader&lt;<em>T</em>&gt;</h5>
 <p>Attempts to create a new factory and loader for a given type. </p>
-<h5 id="dynamomodelsnodefactoryaddtypefactoryandloadersystemtype">Dynamo.Models.NodeFactory.AddTypeFactoryAndLoader(System.Type)</h5>
+<h5 id="addtypefactoryandloadertype-nodetype-1">AddTypeFactoryAndLoader(Type nodeType) <sup>1</sup></h5>
 <p>Attempts to create a new factory and loader for a given type. </p>
 <table>
 <thead>
@@ -1607,7 +1624,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsnodefactoryaddalsoknownassystemtypesystemstringsystemboolean">Dynamo.Models.NodeFactory.AddAlsoKnownAs(System.Type,System.String,System.Boolean)</h5>
+<h5 id="addalsoknownastype-realtypestring-akaboolean-overwrite-1">AddAlsoKnownAs(Type realType,String aka,Boolean overwrite) <sup>1</sup></h5>
 <p>Registers a type with another name that it may go by. </p>
 <table>
 <thead>
@@ -1647,7 +1664,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsnodefactorycreatenodefromxmlsystemxmlxmlelementdynamomodelssavecontextprotocorenamespaceelementresolver">Dynamo.Models.NodeFactory.CreateNodeFromXml(System.Xml.XmlElement,Dynamo.Models.SaveContext,ProtoCore.Namespace.ElementResolver)</h5>
+<h5 id="createnodefromxmlxmlelement-elnodesavecontext-context-1">CreateNodeFromXml(XmlElement elNode,<a href="http://localhost:8000/Dynamo_Models/SaveContext">SaveContext</a> context) <sup>1</sup></h5>
 <p>Creates and Loads a new NodeModel from its Serialized form, using the node loaders registered in this factory. If loading fails, a Dummy Node is produced. </p>
 <table>
 <thead>

@@ -189,7 +189,7 @@
                 <li class="toctree-l3"><a href="#customnodemanager">CustomNodeManager</a></li>
                 
             
-                <li class="toctree-l3"><a href="#customnodemanagerstability1">CustomNodeManagerstability=1</a></li>
+                <li class="toctree-l3"><a href="#customnodemanager-1">CustomNodeManager 1</a></li>
                 
                     <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
@@ -411,6 +411,21 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../Dynamo_Engine/XmlDocumentationExtensions/">XmlDocumentationExtensions</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
         
     </li>
 
@@ -1089,7 +1104,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallBase%602/">FunctionCallBase`2</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
         
     </li>
 
@@ -1336,7 +1351,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchLibrary%602/">SearchLibrary`2</a>
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
         
     </li>
 
@@ -1577,6 +1592,8 @@
     <li>CustomNodeManager</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+      
     </li>
   </ul>
   <hr/>
@@ -1585,11 +1602,11 @@
             <div class="section">
               
                 <h1 id="customnodemanager">CustomNodeManager</h1>
-<h1 id="customnodemanagerstability1">CustomNodeManager<sup>stability=1</sup></h1>
+<h1 id="customnodemanager-1">CustomNodeManager <sup>1</sup></h1>
 <p>Manages instantiation of custom nodes. All custom nodes known to Dynamo should be stored with this type. This object implements late initialization of custom nodes by providing a single interface to initialize custom nodes. </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="dynamocorecustomnodemanagergetworkspacebyidsystemguid">Dynamo.Core.CustomNodeManager.GetWorkspaceById(System.Guid)</h5>
+<h5 id="getworkspacebyidguid-customnodeid-1">GetWorkspaceById(Guid customNodeId) <sup>1</sup></h5>
 <p>Gets custom node workspace by a specified custom node ID </p>
 <table>
 <thead>
@@ -1609,7 +1626,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagercreatecustomnodeinstancesystemguidsystemstringsystemboolean">Dynamo.Core.CustomNodeManager.CreateCustomNodeInstance(System.Guid,System.String,System.Boolean)</h5>
+<h5 id="createcustomnodeinstanceguid-idstring-nicknameboolean-istestmode-1">CreateCustomNodeInstance(Guid id,String nickname,Boolean isTestMode) <sup>1</sup></h5>
 <p>Creates a new Custom Node Instance. </p>
 <table>
 <thead>
@@ -1649,7 +1666,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagerguidfrompathsystemstring">Dynamo.Core.CustomNodeManager.GuidFromPath(System.String)</h5>
+<h5 id="guidfrompathstring-path-1">GuidFromPath(String path) <sup>1</sup></h5>
 <p>Get a function id from a guid assuming that the file is already loaded. </p>
 <table>
 <thead>
@@ -1669,7 +1686,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagerremovesystemguid">Dynamo.Core.CustomNodeManager.Remove(System.Guid)</h5>
+<h5 id="removeguid-guid-1">Remove(Guid guid) <sup>1</sup></h5>
 <p>Attempts to remove all traces of a particular custom node from Dynamo, assuming the node is not in a loaded workspace. </p>
 <table>
 <thead>
@@ -1685,7 +1702,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanageruninitializesystemguid">Dynamo.Core.CustomNodeManager.Uninitialize(System.Guid)</h5>
+<h5 id="uninitializeguid-guid-1">Uninitialize(Guid guid) <sup>1</sup></h5>
 <p>Uninitialized a custom node. The information for the node is still retained, but the next time the node is queried for it's workspace / definition / an instace it will be re-initialized from disk. </p>
 <table>
 <thead>
@@ -1701,7 +1718,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanageradduninitializedcustomnodesinpathsystemstringsystembooleansystemboolean">Dynamo.Core.CustomNodeManager.AddUninitializedCustomNodesInPath(System.String,System.Boolean,System.Boolean)</h5>
+<h5 id="adduninitializedcustomnodesinpathstring-pathboolean-istestmodeboolean-ispackagemember-1">AddUninitializedCustomNodesInPath(String path,Boolean isTestMode,Boolean isPackageMember) <sup>1</sup></h5>
 <p>Scans the given path for custom node files, retaining their information in the manager for later potential initialization. </p>
 <table>
 <thead>
@@ -1745,7 +1762,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagercontainssystemguid">Dynamo.Core.CustomNodeManager.Contains(System.Guid)</h5>
+<h5 id="containsguid-guid-1">Contains(Guid guid) <sup>1</sup></h5>
 <p>Tells whether the custom node's unique identifier is inside of the manager (initialized or not) </p>
 <table>
 <thead>
@@ -1761,7 +1778,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagercontainssystemstring">Dynamo.Core.CustomNodeManager.Contains(System.String)</h5>
+<h5 id="containsstring-name-1">Contains(String name) <sup>1</sup></h5>
 <p>Tells whether the custom node's name is inside of the manager (initialized or not) </p>
 <table>
 <thead>
@@ -1777,7 +1794,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagerisinitializedsystemstring">Dynamo.Core.CustomNodeManager.IsInitialized(System.String)</h5>
+<h5 id="isinitializedstring-name-1">IsInitialized(String name) <sup>1</sup></h5>
 <p>Tells whether the custom node is initialized in the manager </p>
 <table>
 <thead>
@@ -1797,7 +1814,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamocorecustomnodemanagerisinitializedsystemguid">Dynamo.Core.CustomNodeManager.IsInitialized(System.Guid)</h5>
+<h5 id="isinitializedguid-guid-1">IsInitialized(Guid guid) <sup>1</sup></h5>
 <p>Tells whether the custom node is initialized in the manager </p>
 <table>
 <thead>
@@ -1815,17 +1832,17 @@
 </table>
 <hr />
 <h2 id="properties">Properties</h2>
-<h5 id="loadeddefinitionsstability1">LoadedDefinitions<sup>stability=1</sup></h5>
+<h5 id="loadeddefinitions-1">LoadedDefinitions <sup>1</sup></h5>
 <p>CustomNodeDefinitions for all loaded custom nodes, in load order. </p>
-<h5 id="loadedworkspacesstability1">LoadedWorkspaces<sup>stability=1</sup></h5>
+<h5 id="loadedworkspaces-1">LoadedWorkspaces <sup>1</sup></h5>
 <p>All loaded custom node workspaces. </p>
 <hr />
 <h2 id="events">Events</h2>
-<h5 id="definitionupdatedstability1">DefinitionUpdated<sup>stability=1</sup></h5>
+<h5 id="definitionupdated-1">DefinitionUpdated <sup>1</sup></h5>
 <p>An event that is fired when a definition is updated </p>
-<h5 id="infoupdatedstability1">InfoUpdated<sup>stability=1</sup></h5>
+<h5 id="infoupdated-1">InfoUpdated <sup>1</sup></h5>
 <p>An event that is fired when new or updated info is available for a custom node. </p>
-<h5 id="customnoderemovedstability1">CustomNodeRemoved<sup>stability=1</sup></h5>
+<h5 id="customnoderemoved-1">CustomNodeRemoved <sup>1</sup></h5>
 <p>An event that is fired when a custom node is removed from Dynamo. </p>
 <hr />
               

@@ -404,6 +404,21 @@
         
             
     <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
     <li><span>Dynamo.Extensions</span></li>
 
         
@@ -1086,7 +1101,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallBase%602/">FunctionCallBase`2</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
         
     </li>
 
@@ -1333,7 +1348,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchLibrary%602/">SearchLibrary`2</a>
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
         
     </li>
 
@@ -1574,6 +1589,8 @@
     <li>MigrationManager</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+      
     </li>
   </ul>
   <hr/>
@@ -1584,7 +1601,7 @@
                 <h1 id="migrationmanager">MigrationManager</h1>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="dynamomigrationmigrationmanageraddmigrationtypedynamomodelstypeloaddata">Dynamo.Migration.MigrationManager.AddMigrationType(Dynamo.Models.TypeLoadData)</h5>
+<h5 id="addmigrationtypetypeloaddata-t-1">AddMigrationType(<a href="http://localhost:8000/Dynamo_Models/TypeLoadData">TypeLoadData</a> t) <sup>1</sup></h5>
 <p>Adds a new type containing Migration methods into this manager. </p>
 <table>
 <thead>
@@ -1600,7 +1617,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagerprocessworkspacedynamomodelsworkspaceinfosystemxmlxmldocumentsystembooleandynamomodelsnodefactory">Dynamo.Migration.MigrationManager.ProcessWorkspace(Dynamo.Models.WorkspaceInfo,System.Xml.XmlDocument,System.Boolean,Dynamo.Models.NodeFactory)</h5>
+<h5 id="processworkspaceworkspaceinfo-workspaceinfoxmldocument-xmldoc-1">ProcessWorkspace(<a href="http://localhost:8000/Dynamo_Models/WorkspaceInfo">WorkspaceInfo</a> workspaceInfo,XmlDocument xmlDoc) <sup>1</sup></h5>
 <p>Attempts to migrate a workspace to the current version of Dynamo. </p>
 <table>
 <thead>
@@ -1632,7 +1649,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagerprocessworkspacemigrationssystemversionsystemxmlxmldocumentsystemversion">Dynamo.Migration.MigrationManager.ProcessWorkspaceMigrations(System.Version,System.Xml.XmlDocument,System.Version)</h5>
+<h5 id="processworkspacemigrationsversion-currentversionxmldocument-xmldocversion-workspaceversion-1">ProcessWorkspaceMigrations(Version currentVersion,XmlDocument xmlDoc,Version workspaceVersion) <sup>1</sup></h5>
 <p>Runs all migration methods found on the listed migration target types. </p>
 <table>
 <thead>
@@ -1672,7 +1689,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatefunctionnodesystemxmlxmldocumentsystemxmlxmlelementsystemint32systemstringsystemstringsystemstring">Dynamo.Migration.MigrationManager.CreateFunctionNode(System.Xml.XmlDocument,System.Xml.XmlElement,System.Int32,System.String,System.String,System.String)</h5>
+<h5 id="createfunctionnodexmldocument-documentxmlelement-assemblyint32-nicknamestring-signature-1">CreateFunctionNode(XmlDocument document,XmlElement assembly,Int32 nickname,String signature) <sup>1</sup></h5>
 <p>Call this method to create an empty DSFunction node that contains basic function node information. </p>
 <table>
 <thead>
@@ -1728,7 +1745,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatefunctionnodefromsystemxmlxmlelementsystemstring">Dynamo.Migration.MigrationManager.CreateFunctionNodeFrom(System.Xml.XmlElement,System.String[])</h5>
+<h5 id="createfunctionnodefromxmlelement-srcelementstring-attribnames-1">CreateFunctionNodeFrom(XmlElement srcElement,String[] attribNames) <sup>1</sup></h5>
 <p>Call this method to create a XmlElement with a set of attributes carried over from the source XmlElement. The new XmlElement will have a name of "Dynamo.Nodes.DSFunction". </p>
 <table>
 <thead>
@@ -1760,7 +1777,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatefunctionnodefromsystemxmlxmlelement">Dynamo.Migration.MigrationManager.CreateFunctionNodeFrom(System.Xml.XmlElement)</h5>
+<h5 id="createfunctionnodefromxmlelement-srcelement-1">CreateFunctionNodeFrom(XmlElement srcElement) <sup>1</sup></h5>
 <p>Call this method to create a duplicated XmlElement with all the attributes found from the source XmlElement. </p>
 <table>
 <thead>
@@ -1780,7 +1797,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatecodeblocknodefromsystemxmlxmlelement">Dynamo.Migration.MigrationManager.CreateCodeBlockNodeFrom(System.Xml.XmlElement)</h5>
+<h5 id="createcodeblocknodefromxmlelement-srcelement-1">CreateCodeBlockNodeFrom(XmlElement srcElement) <sup>1</sup></h5>
 <p>Call this method to create an empty Code Block node, with all attributes carried over from an existing src XmlElement. </p>
 <table>
 <thead>
@@ -1800,7 +1817,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercloneandchangenamesystemxmlxmlelementsystemstringsystemstringsystemboolean">Dynamo.Migration.MigrationManager.CloneAndChangeName(System.Xml.XmlElement,System.String,System.String,System.Boolean)</h5>
+<h5 id="cloneandchangenamexmlelement-elementstring-typestring-nicknameboolean-cloneinnerxml-1">CloneAndChangeName(XmlElement element,String type,String nickname,Boolean cloneInnerXml) <sup>1</sup></h5>
 <p>Call this method to create a clone of the original XmlElement and change its type at one go. This method preserves all the attributes while updating only the type name. </p>
 <table>
 <thead>
@@ -1856,7 +1873,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatedummynodesystemxmlxmlelementsystemint32systemint32">Dynamo.Migration.MigrationManager.CreateDummyNode(System.Xml.XmlElement,System.Int32,System.Int32)</h5>
+<h5 id="createdummynodexmlelement-elementint32-inportcountint32-outportcount-1">CreateDummyNode(XmlElement element,Int32 inportCount,Int32 outportCount) <sup>1</sup></h5>
 <p>Call this method to create a dummy node, should a node failed to be migrated. This results in a dummy node with a description of what the original node type was, and also retain the number of input and output ports. </p>
 <table>
 <thead>
@@ -1900,7 +1917,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomigrationmigrationmanagercreatemissingnodesystemxmlxmlelementsystemint32systemint32">Dynamo.Migration.MigrationManager.CreateMissingNode(System.Xml.XmlElement,System.Int32,System.Int32)</h5>
+<h5 id="createmissingnodexmlelement-elementint32-inportcountint32-outportcount-1">CreateMissingNode(XmlElement element,Int32 inportCount,Int32 outportCount) <sup>1</sup></h5>
 <p>Call this method to create a dummy node, should a node failed to be migrated. This results in a dummy node with a description of what the original node type was, and also retain the number of input and output ports. </p>
 <table>
 <thead>
@@ -1946,7 +1963,7 @@
 </table>
 <hr />
 <h2 id="properties">Properties</h2>
-<h5 id="migrationtargetsstability1">MigrationTargets<sup>stability=1</sup></h5>
+<h5 id="migrationtargets-1">MigrationTargets <sup>1</sup></h5>
 <p>A collection of types which contain migration methods. </p>
 <hr />
 <h2 id="events">Events</h2>

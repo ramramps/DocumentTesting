@@ -404,6 +404,21 @@
         
             
     <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
     <li><span>Dynamo.Extensions</span></li>
 
         
@@ -743,7 +758,7 @@
                 <li class="toctree-l3"><a href="#dynamomodel">DynamoModel</a></li>
                 
             
-                <li class="toctree-l3"><a href="#dynamomodelstability1">DynamoModelstability=1</a></li>
+                <li class="toctree-l3"><a href="#dynamomodel-1">DynamoModel 1</a></li>
                 
                     <li><a class="toctree-l4" href="#methods">Methods</a></li>
                 
@@ -1089,7 +1104,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallBase%602/">FunctionCallBase`2</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
         
     </li>
 
@@ -1336,7 +1351,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchLibrary%602/">SearchLibrary`2</a>
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
         
     </li>
 
@@ -1577,6 +1592,8 @@
     <li>DynamoModel</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+      
     </li>
   </ul>
   <hr/>
@@ -1585,13 +1602,13 @@
             <div class="section">
               
                 <h1 id="dynamomodel">DynamoModel</h1>
-<h1 id="dynamomodelstability1">DynamoModel<sup>stability=1</sup></h1>
+<h1 id="dynamomodel-1">DynamoModel <sup>1</sup></h1>
 <p>The core model of Dynamo. </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="dynamomodelsdynamomodeladdhomeworkspace">Dynamo.Models.DynamoModel.AddHomeWorkspace()</h5>
+<h5 id="dynamomodelsdynamomodeladdhomeworkspace">Dynamo.Models.DynamoModel.AddHomeWorkspace</h5>
 <p>Add a new HomeWorkspace and set as current </p>
-<h5 id="dynamomodelsdynamomodeladdcustomnodeworkspacedynamomodelscustomnodeworkspacemodel">Dynamo.Models.DynamoModel.AddCustomNodeWorkspace(Dynamo.Models.CustomNodeWorkspaceModel)</h5>
+<h5 id="addcustomnodeworkspacecustomnodeworkspacemodel-workspace-1">AddCustomNodeWorkspace(<a href="http://localhost:8000/Dynamo_Models/CustomNodeWorkspaceModel">CustomNodeWorkspaceModel</a> workspace) <sup>1</sup></h5>
 <p>Add a new, visible Custom Node workspace to Dynamo </p>
 <table>
 <thead>
@@ -1607,7 +1624,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelremoveworkspacedynamomodelsworkspacemodel">Dynamo.Models.DynamoModel.RemoveWorkspace(Dynamo.Models.WorkspaceModel)</h5>
+<h5 id="removeworkspaceworkspacemodel-workspace-1">RemoveWorkspace(<a href="http://localhost:8000/Dynamo_Models/WorkspaceModel">WorkspaceModel</a> workspace) <sup>1</sup></h5>
 <p>Remove a workspace from the dynamo model. </p>
 <table>
 <thead>
@@ -1623,7 +1640,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelopencustomnodeworkspacesystemguid">Dynamo.Models.DynamoModel.OpenCustomNodeWorkspace(System.Guid)</h5>
+<h5 id="opencustomnodeworkspaceguid-guid-1">OpenCustomNodeWorkspace(Guid guid) <sup>1</sup></h5>
 <p>Opens an existing custom node workspace. </p>
 <table>
 <thead>
@@ -1643,7 +1660,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodeladdnodetocurrentworkspacedynamomodelsnodemodelsystemboolean">Dynamo.Models.DynamoModel.AddNodeToCurrentWorkspace(Dynamo.Models.NodeModel,System.Boolean)</h5>
+<h5 id="addnodetocurrentworkspacenodemodel-nodeboolean-centered-1">AddNodeToCurrentWorkspace(<a href="http://localhost:8000/Dynamo_Models/NodeModel">NodeModel</a> node,Boolean centered) <sup>1</sup></h5>
 <p>Adds a node to the current workspace. </p>
 <table>
 <thead>
@@ -1671,11 +1688,11 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelcopy">Dynamo.Models.DynamoModel.Copy()</h5>
+<h5 id="dynamomodelsdynamomodelcopy">Dynamo.Models.DynamoModel.Copy</h5>
 <p>Copy selected ISelectable objects to the clipboard. </p>
-<h5 id="dynamomodelsdynamomodelpaste">Dynamo.Models.DynamoModel.Paste()</h5>
+<h5 id="dynamomodelsdynamomodelpaste">Dynamo.Models.DynamoModel.Paste</h5>
 <p>Paste ISelectable objects from the clipboard to the workspace. </p>
-<h5 id="dynamomodelsdynamomodeladdtoselectionsystemobject">Dynamo.Models.DynamoModel.AddToSelection(System.Object)</h5>
+<h5 id="addtoselectionobject-parameters-1">AddToSelection(Object parameters) <sup>1</sup></h5>
 <p>Add an ISelectable object to the selection. </p>
 <table>
 <thead>
@@ -1691,9 +1708,9 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelclearcurrentworkspace">Dynamo.Models.DynamoModel.ClearCurrentWorkspace()</h5>
+<h5 id="dynamomodelsdynamomodelclearcurrentworkspace">Dynamo.Models.DynamoModel.ClearCurrentWorkspace</h5>
 <p>Clear the workspace. Removes all nodes, notes, and connectors from the current workspace. </p>
-<h5 id="dynamomodelsdynamomodelshutdownsystemboolean">Dynamo.Models.DynamoModel.ShutDown(System.Boolean)</h5>
+<h5 id="shutdownboolean-shutdownhost-1">ShutDown(Boolean shutdownHost) <sup>1</sup></h5>
 <p>External components call this method to shutdown DynamoModel. This method marks 'ShutdownRequested' property to 'true'. This method is used rather than a public virtual method to ensure that the value of ShutdownRequested is set to true. </p>
 <table>
 <thead>
@@ -1709,12 +1726,12 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelstart">Dynamo.Models.DynamoModel.Start()</h5>
+<h5 id="dynamomodelsdynamomodelstart">Dynamo.Models.DynamoModel.Start</h5>
 <p>Start DynamoModel with all default configuration options </p>
 <p>Returns: </p>
-<h5 id="dynamomodelsdynamomodeldispose">Dynamo.Models.DynamoModel.Dispose()</h5>
+<h5 id="dynamomodelsdynamomodeldispose">Dynamo.Models.DynamoModel.Dispose</h5>
 <p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. </p>
-<h5 id="dynamomodelsdynamomodelresetenginesystemboolean">Dynamo.Models.DynamoModel.ResetEngine(System.Boolean)</h5>
+<h5 id="resetengineboolean-marknodesasdirty-1">ResetEngine(Boolean markNodesAsDirty) <sup>1</sup></h5>
 <p>Call this method to reset the virtual machine, avoiding a race condition by using a thread join inside the vm executive. TODO(Luke): Push this into a resync call with the engine controller </p>
 <table>
 <thead>
@@ -1730,9 +1747,9 @@
 </tr>
 </tbody>
 </table>
-<h5 id="dynamomodelsdynamomodelforcerun">Dynamo.Models.DynamoModel.ForceRun()</h5>
+<h5 id="dynamomodelsdynamomodelforcerun">Dynamo.Models.DynamoModel.ForceRun</h5>
 <p>Forces an evaluation of the current workspace by resetting the DesignScript VM. </p>
-<h5 id="dynamomodelsdynamomodelopenfilefrompathsystemstringsystemboolean">Dynamo.Models.DynamoModel.OpenFileFromPath(System.String,System.Boolean)</h5>
+<h5 id="openfilefrompathstring-xmlpath-1">OpenFileFromPath(String xmlPath) <sup>1</sup></h5>
 <p>Opens a Dynamo workspace from a path to an Xml file on disk. </p>
 <table>
 <thead>
@@ -1750,53 +1767,53 @@
 </table>
 <hr />
 <h2 id="properties">Properties</h2>
-<h5 id="istestmodestability1">IsTestMode<sup>stability=1</sup></h5>
+<h5 id="istestmode-1">IsTestMode <sup>1</sup></h5>
 <p>Testing flag is used to defer calls to run in the idle thread with the assumption that the entire test will be wrapped in an idle thread call. </p>
-<h5 id="iscrashingstability1">IsCrashing<sup>stability=1</sup></h5>
+<h5 id="iscrashing-1">IsCrashing <sup>1</sup></h5>
 <p>Specifies whether or not Dynamo is in a crash-state. </p>
-<h5 id="enablemigrationloggingstability1">EnableMigrationLogging<sup>stability=1</sup></h5>
+<h5 id="enablemigrationlogging-1">EnableMigrationLogging <sup>1</sup></h5>
 <p>Setting this flag enables creation of an XML in following format that records node mapping information - which old node has been converted to which to new node(s) </p>
-<h5 id="enginecontrollerstability1">EngineController<sup>stability=1</sup></h5>
+<h5 id="enginecontroller-1">EngineController <sup>1</sup></h5>
 <p>DesignScript VM EngineController, used for this instance of Dynamo. </p>
-<h5 id="shutdownrequestedstability1">ShutdownRequested<sup>stability=1</sup></h5>
+<h5 id="shutdownrequested-1">ShutdownRequested <sup>1</sup></h5>
 <p>Flag specifying whether a shutdown of Dynamo was requested. </p>
-<h5 id="versionstability1">Version<sup>stability=1</sup></h5>
+<h5 id="version-1">Version <sup>1</sup></h5>
 <p>This version of Dynamo. </p>
-<h5 id="updatemanagerstability1">UpdateManager<sup>stability=1</sup></h5>
+<h5 id="updatemanager-1">UpdateManager <sup>1</sup></h5>
 <p>UpdateManager to handle automatic upgrade to higher version. </p>
-<h5 id="pathmanagerstability1">PathManager<sup>stability=1</sup></h5>
+<h5 id="pathmanager-1">PathManager <sup>1</sup></h5>
 <p>The path manager that configures path information required for Dynamo to function properly. See IPathManager interface for more details. </p>
-<h5 id="extensionmanagerstability1">ExtensionManager<sup>stability=1</sup></h5>
+<h5 id="extensionmanager-1">ExtensionManager <sup>1</sup></h5>
 <p>Manages all extensions for Dynamo </p>
-<h5 id="schedulerstability1">Scheduler<sup>stability=1</sup></h5>
+<h5 id="scheduler-1">Scheduler <sup>1</sup></h5>
 <p>The Dynamo Scheduler, handles scheduling of asynchronous tasks on different threads. </p>
-<h5 id="currentworkspacestability1">CurrentWorkspace<sup>stability=1</sup></h5>
+<h5 id="currentworkspace-1">CurrentWorkspace <sup>1</sup></h5>
 <p>The active workspace in Dynamo. </p>
-<h5 id="clipboardstability1">ClipBoard<sup>stability=1</sup></h5>
+<h5 id="clipboard-1">ClipBoard <sup>1</sup></h5>
 <p>The copy/paste clipboard. </p>
-<h5 id="isshowingconnectorsstability1">IsShowingConnectors<sup>stability=1</sup></h5>
+<h5 id="isshowingconnectors-1">IsShowingConnectors <sup>1</sup></h5>
 <p>Specifies whether connectors are displayed in Dynamo. </p>
-<h5 id="connectortypestability1">ConnectorType<sup>stability=1</sup></h5>
+<h5 id="connectortype-1">ConnectorType <sup>1</sup></h5>
 <p>Specifies how connectors are displayed in Dynamo. </p>
-<h5 id="tracereconciliationprocessorstability1">TraceReconciliationProcessor<sup>stability=1</sup></h5>
+<h5 id="tracereconciliationprocessor-1">TraceReconciliationProcessor <sup>1</sup></h5>
 <p>An object which implements the ITraceReconciliationProcessor interface, and is used for handlling the results of a trace reconciliation. </p>
 <hr />
 <h2 id="events">Events</h2>
-<h5 id="cleaningupstability1">CleaningUp<sup>stability=1</sup></h5>
+<h5 id="cleaningup-1">CleaningUp <sup>1</sup></h5>
 <p>An event triggered when the workspace is being cleaned. </p>
-<h5 id="workspacehiddenstability1">WorkspaceHidden<sup>stability=1</sup></h5>
+<h5 id="workspacehidden-1">WorkspaceHidden <sup>1</sup></h5>
 <p>Event called when a workspace is hidden </p>
-<h5 id="requestnodeselectstability1">RequestNodeSelect<sup>stability=1</sup></h5>
+<h5 id="requestnodeselect-1">RequestNodeSelect <sup>1</sup></h5>
 <p>An event which requests that a node be selected </p>
-<h5 id="evaluationcompletedstability1">EvaluationCompleted<sup>stability=1</sup></h5>
+<h5 id="evaluationcompleted-1">EvaluationCompleted <sup>1</sup></h5>
 <p>An event triggered when a single graph evaluation completes. </p>
-<h5 id="refreshcompletedstability1">RefreshCompleted<sup>stability=1</sup></h5>
+<h5 id="refreshcompleted-1">RefreshCompleted <sup>1</sup></h5>
 <p>An event triggered when all tasks in scheduler are completed. </p>
-<h5 id="workspaceopeningstability1">WorkspaceOpening<sup>stability=1</sup></h5>
+<h5 id="workspaceopening-1">WorkspaceOpening <sup>1</sup></h5>
 <p>Event that is fired during the opening of the workspace. Use the XmlDocument object provided to conduct additional workspace opening operations. </p>
-<h5 id="shutdownstartedstability1">ShutdownStarted<sup>stability=1</sup></h5>
+<h5 id="shutdownstarted-1">ShutdownStarted <sup>1</sup></h5>
 <p>This event is raised right before the shutdown of DynamoModel started. When this event is raised, the shutdown is guaranteed to take place (i.e. user has had a chance to save the work and decided to proceed with shutting down Dynamo). Handlers of this event can still safely access the DynamoModel, the WorkspaceModel (along with its contents), and the DynamoScheduler. </p>
-<h5 id="shutdowncompletedstability1">ShutdownCompleted<sup>stability=1</sup></h5>
+<h5 id="shutdowncompleted-1">ShutdownCompleted <sup>1</sup></h5>
 <p>This event is raised after DynamoModel has been shut down. At this point the DynamoModel is no longer valid and access to it should be avoided. </p>
 <hr />
               

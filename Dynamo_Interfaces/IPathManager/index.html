@@ -404,6 +404,21 @@
         
             
     <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
     <li><span>Dynamo.Extensions</span></li>
 
         
@@ -1086,7 +1101,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Nodes/FunctionCallBase%602/">FunctionCallBase`2</a>
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
         
     </li>
 
@@ -1333,7 +1348,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../Dynamo_Search/SearchLibrary%602/">SearchLibrary`2</a>
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
         
     </li>
 
@@ -1574,6 +1589,8 @@
     <li>IPathManager</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+      
     </li>
   </ul>
   <hr/>
@@ -1584,7 +1601,7 @@
                 <h1 id="ipathmanager">IPathManager</h1>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="dynamointerfacesipathmanageraddresolutionpathsystemstring">Dynamo.Interfaces.IPathManager.AddResolutionPath(System.String)</h5>
+<h5 id="addresolutionpathstring-path-1">AddResolutionPath(String path) <sup>1</sup></h5>
 <p>Call this method to add additional path for consideration when path resolution take place. </p>
 <table>
 <thead>
@@ -1602,43 +1619,43 @@
 </table>
 <hr />
 <h2 id="properties">Properties</h2>
-<h5 id="dynamocoredirectorystability1">DynamoCoreDirectory<sup>stability=1</sup></h5>
+<h5 id="dynamocoredirectory-1">DynamoCoreDirectory <sup>1</sup></h5>
 <p>The directory in which DynamoCore.dll is guaranteed to be found. </p>
-<h5 id="userdatadirectorystability1">UserDataDirectory<sup>stability=1</sup></h5>
+<h5 id="userdatadirectory-1">UserDataDirectory <sup>1</sup></h5>
 <p>The local directory that contains user specific data files. </p>
-<h5 id="commondatadirectorystability1">CommonDataDirectory<sup>stability=1</sup></h5>
+<h5 id="commondatadirectory-1">CommonDataDirectory <sup>1</sup></h5>
 <p>The local directory that contains common data files among users. </p>
-<h5 id="defaultuserdefinitionsstability1">DefaultUserDefinitions<sup>stability=1</sup></h5>
+<h5 id="defaultuserdefinitions-1">DefaultUserDefinitions <sup>1</sup></h5>
 <p>The default directory that contains custom nodes created by the user. </p>
-<h5 id="definitiondirectoriesstability1">DefinitionDirectories<sup>stability=1</sup></h5>
+<h5 id="definitiondirectories-1">DefinitionDirectories <sup>1</sup></h5>
 <p>Directories from where custom nodes are to be loaded. The implementor of this interface method should always guarantee that a non-empty list is returned, and that the first entry represents the default custom node directory. Custom nodes created are stored in the default directory, which is specific to the current user. Changes to custom nodes may or may not be saved to their current location depeding on write access. </p>
-<h5 id="commondefinitionsstability1">CommonDefinitions<sup>stability=1</sup></h5>
+<h5 id="commondefinitions-1">CommonDefinitions <sup>1</sup></h5>
 <p>The local directory that contains custom nodes created by all users. </p>
-<h5 id="logdirectorystability1">LogDirectory<sup>stability=1</sup></h5>
+<h5 id="logdirectory-1">LogDirectory <sup>1</sup></h5>
 <p>The local directory where log files are generated. This directory is specific to the current user. </p>
-<h5 id="defaultpackagesdirectorystability1">DefaultPackagesDirectory<sup>stability=1</sup></h5>
+<h5 id="defaultpackagesdirectory-1">DefaultPackagesDirectory <sup>1</sup></h5>
 <p>The default directory for saving packages downloaded through the package manager. This directory is specific to the current user. </p>
-<h5 id="packagesdirectoriesstability1">PackagesDirectories<sup>stability=1</sup></h5>
+<h5 id="packagesdirectories-1">PackagesDirectories <sup>1</sup></h5>
 <p>Directories from where packages are to be loaded. The implementor of this interface method should always guarantee that a non-empty list is returned, and that the first entry represents the default package directory. Packages downloaded through package manager are stored in the default package directory, which is specific to the current user. </p>
-<h5 id="extensionsdirectorystability1">ExtensionsDirectory<sup>stability=1</sup></h5>
+<h5 id="extensionsdirectory-1">ExtensionsDirectory <sup>1</sup></h5>
 <p>The directory, which contains ExtensionDefinition .xml files </p>
-<h5 id="viewextensionsdirectorystability1">ViewExtensionsDirectory<sup>stability=1</sup></h5>
+<h5 id="viewextensionsdirectory-1">ViewExtensionsDirectory <sup>1</sup></h5>
 <p>The directory, which contains ViewExtensionDefinition.xml files </p>
-<h5 id="samplesdirectorystability1">SamplesDirectory<sup>stability=1</sup></h5>
+<h5 id="samplesdirectory-1">SamplesDirectory <sup>1</sup></h5>
 <p>The root directory where all sample files are stored. This directory is common to all users on the machine. </p>
-<h5 id="backupdirectorystability1">BackupDirectory<sup>stability=1</sup></h5>
+<h5 id="backupdirectory-1">BackupDirectory <sup>1</sup></h5>
 <p>The directory where the automatically saved files will be stored. </p>
-<h5 id="preferencefilepathstability1">PreferenceFilePath<sup>stability=1</sup></h5>
+<h5 id="preferencefilepath-1">PreferenceFilePath <sup>1</sup></h5>
 <p>Full path to the preference xml file. This setting file is specific to the current user. </p>
-<h5 id="galleryfilepathstability1">GalleryFilePath<sup>stability=1</sup></h5>
+<h5 id="galleryfilepath-1">GalleryFilePath <sup>1</sup></h5>
 <p>Full path to the GalleryContent xml file. The file is located in the AppData/Dynamo/version/locale/ </p>
-<h5 id="nodedirectoriesstability1">NodeDirectories<sup>stability=1</sup></h5>
+<h5 id="nodedirectories-1">NodeDirectories <sup>1</sup></h5>
 <p>Folders in which node assemblies can be located. </p>
-<h5 id="preloadedlibrariesstability1">PreloadedLibraries<sup>stability=1</sup></h5>
+<h5 id="preloadedlibraries-1">PreloadedLibraries <sup>1</sup></h5>
 <p>A list of node assembly names to be preloaded with Dynamo. </p>
-<h5 id="majorfileversionstability1">MajorFileVersion<sup>stability=1</sup></h5>
+<h5 id="majorfileversion-1">MajorFileVersion <sup>1</sup></h5>
 <p>Major version of assembly file </p>
-<h5 id="minorfileversionstability1">MinorFileVersion<sup>stability=1</sup></h5>
+<h5 id="minorfileversion-1">MinorFileVersion <sup>1</sup></h5>
 <p>Minor version of assembly file </p>
 <hr />
 <h2 id="events">Events</h2>
