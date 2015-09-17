@@ -1606,9 +1606,9 @@
 <p>An extension to the model layer of Dynamo </p>
 <hr />
 <h2 id="methods">Methods</h2>
-<h5 id="startup-1">Startup <sup>1</sup></h5>
+<h5 id="startupdynamoextensionsstartupparams-1">Startup(Dynamo.Extensions.StartupParams) <sup>1</sup></h5>
 <p>Action to be invoked when Dynamo begins to start up. This action is <em>not</em> guaranteed to be invoked unless the extension is already installed at startup. Exceptions thrown from this method will be caught by Dynamo and logged. </p>
-<h5 id="ready-1">Ready <sup>1</sup></h5>
+<h5 id="readydynamoextensionsreadyparams-1">Ready(Dynamo.Extensions.ReadyParams) <sup>1</sup></h5>
 <p>Action to be invoked when the Dynamo has started up and is ready for user interaction. This action is guaranteed to be called even if the extension is installed after startup. Exceptions thrown from this method will be caught by Dynamo and logged. </p>
 <h5 id="dynamoextensionsiextensionshutdown">Dynamo.Extensions.IExtension.Shutdown</h5>
 <p>Action to be invoked when shutdown has begun. </p>
